@@ -107,6 +107,12 @@ footer button {
   border-radius: 4px;
   cursor: pointer;
 }
+footer button.facebook::after {
+  content: "facebook";
+}
+footer button.google::after {
+  content: "google";
+}
 footer button img {
   margin: 22px;
 }
@@ -129,12 +135,6 @@ footer button img {
     margin-top: 15px;
     margin-bottom: 20px;
     color: #8e6447;
-  }
-
-  .Register {
-    display: grid;
-    grid-template-columns: 1fr;
-    margin-top: 20px;
   }
   .form-control {
     margin-bottom: 24px;
@@ -161,10 +161,11 @@ footer button img {
     cursor: pointer;
   }
   footer {
+    margin: auto;
     margin-top: 55px;
+    width: 50%;
   }
   footer button {
-    width: 383px;
     height: 32px;
     background-color: white;
     border-radius: 6px;
@@ -180,7 +181,13 @@ footer button img {
     border-radius: 4px;
     cursor: pointer;
   }
+  footer button.facebook::after {
+    content: " ";
+  }
+  footer button.google::after {
+    content: " ";
+  }
   footer button img {
-    margin: 22px;
+    margin: 10px;
   }
 }

@@ -10,9 +10,14 @@ main {
   font-family: "plus jakarta sans";
 }
 
+section.image {
+  background-image: url("/Public/image/bg-2.png");
+  width: 460px;
+  height: 1024px;
+}
+
 .content {
-  width: 780px;
-  height: 821px;
+  width: 100%;
   margin-left: 70px;
   margin-top: 60px;
 }
@@ -23,7 +28,7 @@ h3 {
   color: #8e6447;
 }
 
-.Register {
+.login {
   display: grid;
   grid-template-columns: 1fr;
   margin-top: 25px;
@@ -54,13 +59,23 @@ h3 {
   border: none;
   outline: none;
 }
-.Register label {
+.login label {
   font-weight: 600;
   margin-bottom: 13px;
   font-size: 16px;
 }
+.control-password a {
+  display: flex;
+  justify-content: end;
+  font-size: 16px;
+  text-weight: 400;
+  color: #ff8906;
+  margin-bottom: 25px;
+  text-decoration: none;
+}
 
-.Register button {
+.login button {
+  width: 100%;
   background-color: #ff8906;
   border-radius: 6px;
   height: 50px;
@@ -74,6 +89,8 @@ h3 {
 p.login {
   text-align: center;
   color: #4f5665;
+  width: 100%;
+  display: inline-block;
 }
 p.login a {
   color: #ff8906;
@@ -102,6 +119,97 @@ footer button {
   border-radius: 4px;
   cursor: pointer;
 }
+footer button.facebook::after {
+  content: "facebook";
+}
+footer button.google::after {
+  content: "google";
+}
 footer button img {
   margin: 22px;
+}
+
+/* Responsif mobile */
+@media screen and (min-width: 375px) and (max-width: 667px) {
+  main {
+    width: 50%;
+    margin-left: 10px;
+    margin-top: 20px;
+  }
+  section.image {
+    background-image: none;
+  }
+  .content {
+    width: 50%;
+  }
+
+  h3 {
+    margin-top: 15px;
+    margin-bottom: 20px;
+    color: #8e6447;
+  }
+  .form-control {
+    margin-bottom: 24px;
+    border-radius: 6px;
+    border: 1px solid #dedede;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .login label {
+    font-weight: 600;
+    margin-bottom: 13px;
+    font-size: 16px;
+  }
+
+  .login button {
+    background-color: #ff8906;
+    border-radius: 6px;
+    height: 50px;
+    font-size: 16px;
+    color: #0b132a;
+    border: 1px solid #ff8906;
+    margin-bottom: 25px;
+    cursor: pointer;
+  }
+  .control-password a {
+    display: flex;
+    justify-content: end;
+    font-size: 14px;
+    text-weight: 400;
+    color: #ff8906;
+    margin-bottom: 25px;
+    text-decoration: none;
+  }
+
+  footer {
+    margin: auto;
+    margin-top: 55px;
+    width: 50%;
+  }
+  footer button {
+    height: 32px;
+    background-color: white;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 14px;
+    font-size: 18px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    box-shadow: 0px 3px 0px 0px lightgray;
+    border: 1px solid lightgray;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  footer button.facebook::after {
+    content: " ";
+  }
+  footer button.google::after {
+    content: " ";
+  }
+  footer button img {
+    margin: 10px;
+  }
 }

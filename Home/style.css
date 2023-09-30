@@ -1,0 +1,102 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+.container {
+  width: 1440px;
+  font-family: "plus jakarta sans";
+}
+.container header {
+  width: 100%;
+  height: 76px;
+  border: 0px 0px 1px 0px;
+  box-shadow: 0px 1px #0b090921;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  opacity: 1;
+}
+.content {
+  display: flex;
+  justify-content: center;
+  gap: 68px;
+}
+.content.right {
+  gap: 22px;
+}
+/* start button */
+button.btn {
+  width: 114px;
+  border: 1px solid #ff8906;
+  border-radius: 6px;
+  padding: 10px;
+  background-color: #ff8906;
+  color: #0b132a;
+  text-weight: 500;
+  cursor: pointer;
+}
+/* end button */
+
+button.signIn {
+  border: 1px solid white;
+  padding: 12px 18px;
+  border-radius: 5px;
+  background-color: transparent;
+  color: white;
+}
+
+.control-flex {
+  width: 730px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* start main content */
+main {
+  width: 100%;
+  display: flex;
+}
+
+main section {
+  width: 500%;
+  margin-top: -80px;
+}
+main section.gradient {
+  height: 1024px;
+  background-image: linear-gradient(#777c82, #0b0909);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main section.image {
+  height: 1024px;
+  background-image: url("../public/image/bg-3.png");
+  background-repeat: no-repeat;
+}
+/* end main content */
+
+.action {
+  width: 518px;
+  border: 1px solid black;
+}
+.action h2 {
+  text-weight: 500;
+  font-size: 48px;
+  line-height: 60.48px;
+  color: #ffff;
+  margin-bottom: 25px;
+}
+.action p {
+  text-weight: 400;
+  font-size: 16px;
+  line-height: 20.16px;
+  color: #fff;
+  margin-bottom: 25px;
+}
+
+.content.grid {
+  display: grid;
+  grid-template-columns: 146px 2fr 1fr;
+  margin-top: 25px;
+}

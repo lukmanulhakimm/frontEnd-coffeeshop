@@ -3,43 +3,63 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200;0,300;1,200;1,300&display=swap"
+      rel="stylesheet"
+    />
+    <title>Home</title>
   </head>
   <body>
-    <div style="width: 1440px">
+    <div class="container">
       <header>
-        <section>
-          <div>
-            <img src="" alt="" />
-            <h3>Home</h3>
-            <h3>Product</h3>
+        <section class="control-flex">
+          <div class="content">
+            <img src="/Public/image/Frame 13.png" alt="coffee" />
+            <h1>Home</h1>
+            <h1>Product</h1>
           </div>
         </section>
-        <section>
-          <div>
-            <img src="" alt="" />
-            <img src="" alt="" />
-            <form action="">
-              <button>Sig In</button>
-            </form>
-            <form action="">
-              <button>Sign Up</button>
-            </form>
+        <section class="control-flex">
+          <div class="content right">
+            <img src="/Public/svg/icons-search.svg" alt="search" />
+            <img src="/Public/svg/icons-markets.svg" alt="markets" />
+            <button class="btn signIn">Sign In</button>
+            <button class="btn">Sign Up</button>
           </div>
         </section>
       </header>
+      <!-- start main content -->
+      <main>
+        <section class="gradient">
+          <div class="action">
+            <h2>Start Your Day with Coffee and Good Meals</h2>
+            <p>
+              We provide high quality beans, good taste, and healthy meals made
+              by love just for you. Start your day with us for a bigger smile!
+            </p>
+            <button class="btn">Get Started</button>
+            <div class="content grid">
+              <div>
+                <h1>90+</h1>
+                <h3>Staff</h3>
+              </div>
+              <div>
+                <h1>30+</h1>
+                <h3>Stores</h3>
+              </div>
+              <div>
+                <h1>800+</h1>
+                <h3>Customer</h3>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="image"></section>
+      </main>
+      <!-- end main content -->
     </div>
-    <main>
-      <section>
-        <div>
-          <h1></h1>
-          <p></p>
-          <form action="">
-            <button></button>
-          </form>
-        </div>
-      </section>
-      <section></section>
-    </main>
   </body>
 </html>

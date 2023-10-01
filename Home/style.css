@@ -296,6 +296,7 @@ span {
 /* start profile */
 .profile {
   width: 100%;
+  height: 583px;
   display: flex;
   background-image: linear-gradient(#777c82, #0b0909);
   justify-content: center;
@@ -403,10 +404,47 @@ span {
 /* end profile */
 
 /* start footer */
-.footer {
-  width: 100%;
-  background-color: #f8f8f8;
-  margin-top: 70px;
+.footers {
+  display: flex;
+  justify-content: center;
+  margin-top: 170px;
 }
 
+.footer {
+  padding-top: 50px;
+  width: 100%;
+  background-color: #f8f8f8;
+}
+.footers .one {
+  padding-top: 80px;
+}
+
+.footer p {
+  text-weight: 400;
+  font-size: 16px;
+  line-height: 30px;
+  color: #4f5665;
+  padding-bottom: 10px;
+}
+.footer .copyright {
+  padding-top: 32px;
+  font-family: "rubik";
+}
+
+.media {
+  display: flex;
+  gap: 20px;
+}
+.media button {
+  margin-top: 25px;
+  background-color: black;
+  width: 33px;
+  height: 33px;
+  border: 1px solid #ff8906;
+  border-radius: 100%;
+}
+.media img {
+  width: 33.6px;
+  height: 33.6px;
+}
 /* end footer */

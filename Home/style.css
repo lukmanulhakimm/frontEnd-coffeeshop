@@ -7,6 +7,7 @@
 .container {
   width: 1440px;
   font-family: "plus jakarta sans";
+  margin: auto;
 }
 .container header {
   width: 100%;
@@ -34,7 +35,7 @@ button.btn {
   padding: 10px;
   background-color: #ff8906;
   color: #0b132a;
-  text-weight: 500;
+  font-weight: 500;
   cursor: pointer;
 }
 /* end button */
@@ -55,7 +56,7 @@ button.signIn {
   cursor: pointer;
 }
 .control-flex .content h1 {
-  text-weight: 500;
+  font-weight: 500;
   font-size: 14px;
   color: white;
   padding: 10px;
@@ -95,14 +96,14 @@ main section.image {
   width: 518px;
 }
 .action h2 {
-  text-weight: 500;
+  font-weight: 500;
   font-size: 48px;
   line-height: 60.48px;
   color: #ffff;
   margin-bottom: 25px;
 }
 .action p {
-  text-weight: 400;
+  font-weight: 400;
   font-size: 16px;
   line-height: 20.16px;
   color: #fff;
@@ -120,7 +121,7 @@ main section.image {
 .grid h1 {
   color: #ff8906;
   font-size: 48px;
-  text-weight: 500;
+  font-weight: 500;
 }
 .line {
   border-width: 0px 1px 0px 1px;
@@ -162,7 +163,7 @@ main section.image {
 }
 
 .action-left .action h1 {
-  text-weight: 500;
+  font-weight: 500;
   font-size: 48px;
   color: #0b132a;
   padding-bottom: 25px;
@@ -171,7 +172,7 @@ span {
   color: #8e6447;
 }
 .action-left .action p {
-  text-weight: 400px;
+  font-weight: 400px;
   font-size: 16px;
   color: #4f5665;
   padding-bottom: 25px;
@@ -194,7 +195,7 @@ span {
   text-align: center;
 }
 .three h1 {
-  text-weight: 500;
+  font-weight: 500;
   font-size: 48px;
   line-height: 60.48px;
   color: #0b132a;
@@ -209,7 +210,7 @@ span {
 }
 .three p {
   font-size: 16px;
-  text-weight: 400;
+  font-weight: 400;
   line-height: 20.16px;
 }
 /* end content three */
@@ -238,13 +239,13 @@ span {
 }
 .desc h3 {
   font-size: 22px;
-  text-weight: 500;
+  font-weight: 500;
   line-height: 27.72px;
   color: #0b132a;
   padding-bottom: 12px;
 }
 .desc p {
-  text-weight: 400;
+  font-weight: 400;
   font-size: 14px;
   color: #4f5665;
   line-height: 17.64px;
@@ -252,7 +253,7 @@ span {
   padding-bottom: 12px;
 }
 .desc h2 {
-  text-weight: 500;
+  font-weight: 500;
   font-size: 22px;
   color: #ff8906;
   padding-bottom: 12px;
@@ -312,7 +313,7 @@ span {
 }
 .profile h3 {
   padding-top: 80px;
-  text-weight: 400;
+  font-weight: 400;
   font-size: 16px;
   line-height: 20.16px;
   color: white;
@@ -331,14 +332,14 @@ span {
   display: flex;
 }
 .name-profile h1 {
-  text-weight: 500;
+  font-weight: 500;
   font-size: 48px;
   line-height: 60.48px;
   color: white;
   padding-left: 20px;
 }
 .profile h4 {
-  text-weight: 400;
+  font-weight: 400;
   font-size: 16px;
   line-height: 20.16px;
   color: #ff8906;
@@ -346,7 +347,7 @@ span {
 }
 .profile p {
   font-size: 16px;
-  text-weight: 400;
+  font-weight: 400;
   line-height: 20.16px;
   color: white;
   padding-bottom: 25px;
@@ -405,32 +406,43 @@ span {
 
 /* start footer */
 .footers {
-  display: flex;
-  justify-content: center;
-  margin-top: 170px;
-}
-
-.footer {
-  padding-top: 50px;
+  font-family: "plus jakarta sans";
+  margin-top: 70px;
+  padding-left: 130px;
   width: 100%;
   background-color: #f8f8f8;
 }
-.footers .one {
-  padding-top: 80px;
+.finish {
+  width: 80%;
+  display: flex;
+  justify-content: start;
+  padding-top: 50px;
 }
-
+.footer {
+  margin-top: 40px;
+}
+.two {
+  width: 10px;
+}
+.one {
+  padding-top: 60px;
+  padding-right: 60px;
+  width: 80%;
+}
+.footer h3 {
+  padding-bottom: 20px;
+}
 .footer p {
-  text-weight: 400;
+  font-weight: 400;
   font-size: 16px;
   line-height: 30px;
   color: #4f5665;
   padding-bottom: 10px;
 }
-.footer .copyright {
+.copyright {
   padding-top: 32px;
   font-family: "rubik";
 }
-
 .media {
   display: flex;
   gap: 20px;
@@ -442,6 +454,7 @@ span {
   height: 33px;
   border: 1px solid #ff8906;
   border-radius: 100%;
+  cursor: pointer;
 }
 .media img {
   width: 33.6px;

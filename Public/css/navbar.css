@@ -62,6 +62,15 @@ button.signIn {
 button {
   cursor: pointer;
 }
+a {
+  text-decoration: none;
+}
+
+a.active-link {
+  border-width: 0px 0px 1px 0px;
+  border-style: solid;
+  border-color: #ff8906;
+}
 
 @media only screen and (max-width: 768px) {
   .desktop-only {

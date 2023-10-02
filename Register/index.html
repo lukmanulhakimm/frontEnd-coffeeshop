@@ -10,80 +10,79 @@
       href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200;0,300;1,200;1,300&display=swap"
       rel="stylesheet"
     />
-    <title>Register</title>
+    <title>Login</title>
   </head>
   <body>
     <main>
-      <section class="image"></section>
-      <section>
-        <div class="content">
-          <div>
-            <img src="/Public/image/iconCoffee.png" alt="icon-coffee" />
+      <section class="bg">
+        <div class="image-cover"></div>
+      </section>
+      <section class="content">
+        <div>
+          <img src="/Public/image/iconCoffee.png" alt="icon-coffee" />
+        </div>
+        <h3>Register</h3>
+        <p>Fill out the form correctly</p>
+        <form class="register">
+          <label for="fullName">Full name</label>
+          <div class="form-control">
+            <span
+              ><img src="/Public/svg/icons-humans.svg" alt="iconsHumans"
+            /></span>
+            <input
+              type="text"
+              id="fullName"
+              class="input-control"
+              placeholder="Enter Your Full Name"
+            />
           </div>
-          <h3>Register</h3>
-          <p>Fill out the form correctly</p>
-          <form class="Register">
-            <label for="fullName">Full name</label>
-            <div class="form-control">
-              <span
-                ><img src="/Public/svg/icons-humans.svg" alt="iconsHumans"
-              /></span>
-              <input
-                type="text"
-                id="fullName"
-                class="input-control"
-                placeholder="Enter Your Full Name"
-              />
-            </div>
-            <label for="email">Email</label>
-            <div class="form-control">
-              <span><img src="/Public/svg/icons-email.svg" alt="email" /></span>
-              <input
-                type="text"
-                id="email"
-                placeholder="  Enter Your Email"
-                class="input-control"
-              />
-            </div>
+          <label for="email">Email</label>
+          <div class="form-control">
+            <span><img src="/Public/svg/icons-email.svg" alt="email" /></span>
+            <input
+              type="text"
+              id="email"
+              placeholder="  Enter Your Email"
+              class="input-control"
+            />
+          </div>
 
-            <label for="password">Password</label>
-            <div class="form-control">
-              <span
-                ><img src="/Public/svg/icons-password.svg" alt="password"
-              /></span>
-              <input
-                type="password"
-                id="password"
-                placeholder=" Enter Your Password"
-                class="input-control"
-              />
-              <span><img src="/Public/svg/icon-eyes.svg" alt="eyes" /></span>
-            </div>
-            <label for="ConfirmPassword">ConfirmPassword</label>
-            <div class="form-control">
-              <span
-                ><img src="/Public/svg/icons-password.svg" alt="password"
-              /></span>
-              <input
-                type="password"
-                id="ConfirmPassword"
-                placeholder="Enter Your Password Again"
-                class="input-control"
-              />
-              <span><img src="/Public/svg/icon-eyes.svg" alt="eyes" /></span>
-            </div>
-
-            <button>Register</button>
-          </form>
-          <p class="login">Have An Account? <a href="#">Login</a></p>
-          <footer>
-            <button class="facebook">
-              <img src="/Public/icons/iconFacebook.png" alt="Facebook" />
-            </button>
-            <button class="google">
-              <img src="/Public/icons/iconsGoogle.png" alt="Google" />
-            </button>
-          </footer>
+          <label for="password">Password</label>
+          <div class="form-control">
+            <span
+              ><img src="/Public/svg/icons-password.svg" alt="password"
+            /></span>
+            <input
+              type="password"
+              id="password"
+              placeholder=" Enter Your Password"
+              class="input-control"
+            />
+            <span><img src="/Public/svg/icon-eyes.svg" alt="eyes" /></span>
+          </div>
+          <label for="ConfirmPassword">ConfirmPassword</label>
+          <div class="form-control">
+            <span
+              ><img src="/Public/svg/icons-password.svg" alt="password"
+            /></span>
+            <input
+              type="password"
+              id="ConfirmPassword"
+              placeholder="Enter Your Password Again"
+              class="input-control"
+            />
+            <span><img src="/Public/svg/icon-eyes.svg" alt="eyes" /></span>
+          </div>
+          <button class="register">Register</button>
+        </form>
+        <p class="login">Have An Account? <a href="#">Register</a></p>
+        <div class="outside-button">
+          <button class="facebook">
+            <img src="/Public/icons/iconFacebook.png" alt="Facebook" />
+          </button>
+          <button class="google">
+            <img src="/Public/icons/iconsGoogle.png" alt="Google" />
+          </button>
         </div>
       </section>
     </main>

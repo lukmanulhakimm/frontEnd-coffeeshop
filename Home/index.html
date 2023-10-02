@@ -13,24 +13,28 @@
     <title>Home</title>
   </head>
   <body>
-    <div class="container">
-      <header>
-        <section class="control-flex">
-          <div class="content">
-            <img src="/Public/image/Frame 13.png" alt="coffee" />
-            <h1>Home</h1>
-            <h1>Product</h1>
-          </div>
-        </section>
-        <section class="control-flex">
-          <div class="content right">
-            <img src="/Public/svg/icons-search.svg" alt="search" />
-            <img src="/Public/svg/icons-markets.svg" alt="markets" />
-            <button class="btn signIn">Sign In</button>
-            <button class="btn">Sign Up</button>
-          </div>
-        </section>
-      </header>
+    <header class="wrapper">
+      <div class="container">
+        <div class="nav-content">
+          <section class="control-flex">
+            <div class="content">
+              <img src="/Public/image/Frame 13.png" alt="coffee" />
+              <h1>Home</h1>
+              <h1>Product</h1>
+            </div>
+          </section>
+          <section class="control-flex">
+            <div class="content right">
+              <img src="/Public/svg/icons-search.svg" alt="search" />
+              <img src="/Public/svg/icons-markets.svg" alt="markets" />
+              <button class="btn signIn">Sign In</button>
+              <button class="btn">Sign Up</button>
+            </div>
+          </section>
+        </div>
+      </div>
+    </header>
+    <div class="">
       <!-- start main content -->
       <main>
         <section class="gradient">
@@ -114,7 +118,7 @@
           </div>
         </section>
         <section class="image-bg">
-          <img src="/Public/image/bg-4.png" alt="bg-4" width="711" />
+          <img src="/Public/image/bg-4.png" alt="bg-4" width="100%" />
         </section>
       </main>
       <!-- end main content two -->
@@ -220,47 +224,54 @@
       </div>
       <!-- end content map -->
       <!-- start profile -->
-      <main class="profile">
-        <img src="/Public/image/profile.png" alt="profile" />
-        <section>
-          <h3>TESTIMONIAL</h3>
-          <div class="name-profile">
-            <div class="border-vertikal"></div>
-            <h1>Viezh Robert</h1>
-          </div>
-          <h4>Manager Coffee Shop</h4>
-          <p>
-            “Wow... I am very happy to spend my whole day here. the Wi-fi is
-            good, and the coffee and meals tho. I like it here!! Very
-            recommended!
-          </p>
-          <div class="rating">
-            <div><img src="/Public/icons/bintang.png" alt="" /></div>
-            <div><img src="/Public/icons/bintang.png" alt="" /></div>
-            <div><img src="/Public/icons/bintang.png" alt="" /></div>
-            <div><img src="/Public/icons/bintang.png" alt="" /></div>
-            <div><img src="/Public/icons/bintang.png" alt="" /></div>
-            <div><p>5.0</p></div>
-          </div>
-          <div class="arrow">
-            <button class="arrow-left">
-              <img src="/Public/icons/arrow-left.png" alt="arrow" />
-            </button>
-            <button class="arrow-right">
-              <img src="/Public/icons/arrow-right.png" alt="arrow" />
-            </button>
-          </div>
-          <div class="btn">
-            <button class="Rectangle"></button>
-            <button class="circle"></button>
-            <button class="circle"></button>
-            <button class="circle"></button>
-          </div>
-        </section>
+      <main class="wrapper profile-cover">
+        <div class="container">
+          <main class="profile">
+            <img src="/Public/image/profile.png" alt="profile" />
+            <section>
+              <h3>TESTIMONIAL</h3>
+              <div class="name-profile">
+                <div class="border-vertikal"></div>
+                <h1>Viezh Robert</h1>
+              </div>
+              <h4>Manager Coffee Shop</h4>
+              <p>
+                “Wow... I am very happy to spend my whole day here. the Wi-fi is
+                good, and the coffee and meals tho. I like it here!! Very
+                recommended!
+              </p>
+              <div class="rating">
+                <div><img src="/Public/icons/bintang.png" alt="" /></div>
+                <div><img src="/Public/icons/bintang.png" alt="" /></div>
+                <div><img src="/Public/icons/bintang.png" alt="" /></div>
+                <div><img src="/Public/icons/bintang.png" alt="" /></div>
+                <div><img src="/Public/icons/bintang.png" alt="" /></div>
+                <div><p>5.0</p></div>
+              </div>
+              <div class="arrow">
+                <button class="arrow-left">
+                  <img src="/Public/icons/arrow-left.png" alt="arrow" />
+                </button>
+                <button class="arrow-right">
+                  <img src="/Public/icons/arrow-right.png" alt="arrow" />
+                </button>
+              </div>
+              <div class="btn">
+                <button class="Rectangle"></button>
+                <button class="circle"></button>
+                <button class="circle"></button>
+                <button class="circle"></button>
+              </div>
+            </section>
+          </main>
+        </div>
       </main>
       <!-- end profile -->
       <!-- start footer -->
-      <main class="footers">
+      <!-- end footer -->
+    </div>
+    <footer class="footers wrapper">
+      <div class="container">
         <div class="finish">
           <section class="footer one">
             <img src="/Public/image/iconCoffee.png" alt="coffee" />
@@ -268,25 +279,26 @@
               Coffee Shop is a store that sells some good meals, and especially
               coffee. We provide high quality beans
             </p>
-            <p class="copyright">©2020CoffeeStore</p>
           </section>
-          <section class="footer two">
-            <h3>Product</h3>
-            <p>Our Product</p>
-            <p>Pricing</p>
-            <p>Locations</p>
-            <p>Countries</p>
-            <p>Blog</p>
-          </section>
-          <section class="footer three">
-            <h3>Engage</h3>
-            <p>Partner</p>
-            <p>FAQ</p>
-            <p>About Us</p>
-            <p>Privacy Policy</p>
-            <p>Terms of Service</p>
-          </section>
-          <section class="footer four">
+          <div style="display: flex; gap: 106px">
+            <section class="footer">
+              <h3>Product</h3>
+              <p>Our Product</p>
+              <p>Pricing</p>
+              <p>Locations</p>
+              <p>Countries</p>
+              <p>Blog</p>
+            </section>
+            <section class="footer">
+              <h3>Engage</h3>
+              <p>Partner</p>
+              <p>FAQ</p>
+              <p>About Us</p>
+              <p>Privacy Policy</p>
+              <p>Terms of Service</p>
+            </section>
+          </div>
+          <section class="footer">
             <h3>Social Media</h3>
             <div class="media">
               <button>
@@ -301,8 +313,8 @@
             </div>
           </section>
         </div>
-      </main>
-      <!-- end footer -->
-    </div>
+        <p class="copyright">©2020CoffeeStore</p>
+      </div>
+    </footer>
   </body>
 </html>

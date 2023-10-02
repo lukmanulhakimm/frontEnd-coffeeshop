@@ -2,22 +2,34 @@
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
+  font-family: "plus jakarta sans";
+}
+
+.wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
 .container {
-  width: 1440px;
-  font-family: "plus jakarta sans";
-  margin: auto;
+  max-width: 1440px;
+  width: 100%;
+  padding: 0 20px;
 }
-.container header {
+
+.nav-content {
+  display: flex;
+  justify-content: space-between;
+}
+
+header {
+  position: relative;
   width: 100%;
   height: 76px;
   border: 0px 0px 1px 0px;
   box-shadow: 0px 1px #0b090921;
   display: flex;
-  justify-content: space-between;
-  position: relative;
-  opacity: 1;
+  align-items: center;
 }
 .content {
   display: flex;
@@ -28,6 +40,24 @@
   gap: 22px;
 }
 /* start button */
+.main-three {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 81px;
+}
+.three {
+  width: 1180px;
+  text-align: center;
+}
+.three h1 {
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 60.48px;
+  color: #0b132a;
+  padding-bottom: 25px;
+}
 button.btn {
   width: 114px;
   border: 1px solid #ff8906;
@@ -38,7 +68,6 @@ button.btn {
   font-weight: 500;
   cursor: pointer;
 }
-/* end button */
 
 button.signIn {
   border: 1px solid white;
@@ -47,7 +76,7 @@ button.signIn {
   background-color: transparent;
   color: white;
 }
-
+/* end button */
 .control-flex {
   width: 730px;
   display: flex;
@@ -71,6 +100,7 @@ button.signIn {
 /* start main content */
 main {
   width: 100%;
+
   display: flex;
 }
 
@@ -80,7 +110,7 @@ main section {
 }
 main section.gradient {
   height: 1024px;
-  background-image: linear-gradient(#777c82, #0b0909);
+  background-image: linear-gradient(#0b0909, #777c82);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -89,6 +119,7 @@ main section.image {
   height: 1024px;
   background-image: url("../public/image/bg-3.png");
   background-repeat: no-repeat;
+  background-size: cover;
 }
 /* end main content */
 
@@ -139,7 +170,7 @@ main section.image {
   top: 850px;
   left: 500px;
   color: red;
-  padding: 17px;
+  /* padding: 17px; */
   cursor: pointer;
 }
 /* start content two */
@@ -183,24 +214,7 @@ span {
 }
 /* end content two  */
 /* start content three */
-.main-three {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding-top: 81px;
-}
-.three {
-  width: 1180px;
-  text-align: center;
-}
-.three h1 {
-  font-weight: 500;
-  font-size: 48px;
-  line-height: 60.48px;
-  color: #0b132a;
-  padding-bottom: 25px;
-}
+
 .border {
   margin: auto;
   width: 68px;
@@ -208,11 +222,7 @@ span {
   background-color: #ff8906;
   margin-bottom: 25px;
 }
-.three p {
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 20.16px;
-}
+
 /* end content three */
 /* start content four */
 .main-four {
@@ -299,11 +309,16 @@ span {
   width: 100%;
   height: 583px;
   display: flex;
-  background-image: linear-gradient(#777c82, #0b0909);
+
   justify-content: center;
   align-items: center;
   box-sizing: border-box;
 }
+
+.profile-cover {
+  background-image: linear-gradient(#777c82, #0b0909);
+}
+
 .profile img {
   margin-left: 32px;
   margin-top: 73px;
@@ -408,26 +423,23 @@ span {
 .footers {
   font-family: "plus jakarta sans";
   margin-top: 70px;
-  padding-left: 130px;
   width: 100%;
   background-color: #f8f8f8;
+  bottom: 0;
 }
 .finish {
-  width: 80%;
+  width: 100%;
   display: flex;
+  flex-wrap: wrap;
   justify-content: start;
   padding-top: 50px;
+  gap: 106px;
+  padding-top: 40px;
 }
-.footer {
-  margin-top: 40px;
-}
-.two {
-  width: 10px;
-}
+
 .one {
-  padding-top: 60px;
   padding-right: 60px;
-  width: 80%;
+  max-width: 340px;
 }
 .footer h3 {
   padding-bottom: 20px;
@@ -441,7 +453,8 @@ span {
 }
 .copyright {
   padding-top: 32px;
-  font-family: "rubik";
+  /* font-family: "rubik"; */
+  color: #afb5c0;
 }
 .media {
   display: flex;
@@ -461,3 +474,9 @@ span {
   height: 33.6px;
 }
 /* end footer */
+@media screen and (min-width: 0px) and (max-width: 768px) {
+  .finish {
+    flex-direction: column;
+    gap: 20px;
+  }
+}

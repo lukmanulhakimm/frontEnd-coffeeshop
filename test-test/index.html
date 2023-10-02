@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body style="background-color: black; width: 278px">
+    <div class="range">
+      <div class="range-slider">
+        <span class="range-selected"></span>
+      </div>
+      <div class="range-input">
+        <input
+          type="range"
+          class="min"
+          min="0"
+          max="1000"
+          value="300"
+          step="10"
+        />
+        <input
+          type="range"
+          class="max"
+          min="0"
+          max="1000"
+          value="700"
+          step="10"
+        />
+      </div>
+      <div class="range-price" style="display: none">
+        <label for="min">Min</label>
+        <input type="number" name="min" value="300" />
+        <label for="max">Max</label>
+        <input type="number" name="max" value="700" />
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>

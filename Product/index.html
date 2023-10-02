@@ -14,39 +14,68 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css"
     />
-    <title>Document</title>
+    <link rel="stylesheet" href="../Public/css/navbar.css" />
+    <title>Product</title>
   </head>
   <body>
-    <div class="container">
-      <!-- start header -->
-      <header>
-        <section class="control-flex">
-          <div class="content">
-            <img src="/Public/image/Frame 13.png" alt="coffee" />
-            <h1>Home</h1>
-            <h1>Product</h1>
-          </div>
-        </section>
-        <section class="control-flex">
-          <div class="content right">
-            <img src="/Public/svg/icons-search.svg" alt="search" />
-            <img src="/Public/svg/icons-markets.svg" alt="markets" />
-            <button class="btn signIn">Sign In</button>
-            <button class="btn">Sign Up</button>
-          </div>
-        </section>
-      </header>
-      <!-- end header  -->
-      <!-- start nav -->
-      <main class="nav">
-        <section class="first">
-          <h2>We Provide Good Coffee and Healthy Meals</h2>
-        </section>
-      </main>
-      <!-- end nav  -->
-      <!-- start promo -->
-      <main class="promo">
-        <section>
+    <header class="wrapper">
+      <div class="container">
+        <div class="nav-content">
+          <section class="control-flex">
+            <div class="content">
+              <img src="/Public/image/Frame 13.png" alt="coffee" />
+              <h1 class="desktop-only">Home</h1>
+              <h1 class="desktop-only">Product</h1>
+            </div>
+          </section>
+          <section class="control-flex">
+            <div class="content right">
+              <img
+                src="/Public/svg/icons-search.svg"
+                alt="search"
+                class="desktop-only"
+              />
+              <img src="/Public/svg/icons-markets.svg" alt="markets" />
+              <img
+                src="/Public/icons/hamburger.png"
+                alt="hamburger"
+                class="mobile-only"
+              />
+              <button class="btn signIn desktop-only">Sign In</button>
+              <button class="btn desktop-only">Sign Up</button>
+            </div>
+          </section>
+        </div>
+      </div>
+    </header>
+    <div class="hero-banner">
+      <div class="wrapper">
+        <div class="container">
+          <section class="first">
+            <h2>We Provide Good Coffee and Healthy Meals</h2>
+          </section>
+        </div>
+      </div>
+    </div>
+    <div class="mobile-only">
+      <div class="filter-mobile">
+        <div class="form-control">
+          <div><img src="/Public/svg/Search.svg" alt="iconsHumans" /></div>
+          <input
+            type="text"
+            id="fullName"
+            class="input-control"
+            placeholder="Find Product"
+          />
+        </div>
+        <div class="button-filter">
+          <img src="/Public/svg/Filter.png" alt="iconsHumans" />
+        </div>
+      </div>
+    </div>
+    <div class="wrapper">
+      <div class="container">
+        <section class="promo">
           <h1>Today <span>Promo</span></h1>
           <div class="arrow">
             <button class="arrow-left">
@@ -57,167 +86,413 @@
             </button>
           </div>
         </section>
-      </main>
-      <!-- end promo -->
-      <!-- start kupon -->
-      <main class="kupon">
-        <section>
+      </div>
+    </div>
+    <div class="wrapper">
+      <div class="" style="width: 100%">
+        <!-- end promo -->
+        <!-- start kupon -->
+        <section class="kupon">
           <div class="klaim">
             <img src="/Public/image/promo.png" alt="humans" />
             <div class="text">
               <p>
-                <span>HAPPY MOTHER'S DAY!</span> Get one of our favorite menu
-                for free!
+                <span>HAPPY MOTHER'S DAY!</span>
               </p>
+              <p>Get one of our favorite menu for free!</p>
               <p class="klaim-kupon">klaim kupon</p>
             </div>
           </div>
-        </section>
-        <section>
           <div class="klaim">
             <img src="/Public/image/promo.png" alt="humans" />
             <div class="text">
               <p>
-                <span>HAPPY MOTHER'S DAY!</span> Get one of our favorite menu
-                for free!
+                <span>HAPPY MOTHER'S DAY!</span>
               </p>
+              <p>Get one of our favorite menu for free!</p>
               <p class="klaim-kupon">klaim kupon</p>
             </div>
           </div>
-        </section>
-        <section>
           <div class="klaim">
             <img src="/Public/image/promo.png" alt="humans" />
             <div class="text">
               <p>
-                <span>HAPPY MOTHER'S DAY!</span> Get one of our favorite menu
-                for free!
+                <span>HAPPY MOTHER'S DAY!</span>
               </p>
+              <p>Get one of our favorite menu for free!</p>
               <p class="klaim-kupon">klaim kupon</p>
             </div>
           </div>
-        </section>
-        <section class="yellow">
-          <div class="klaim">
+          <div class="klaim yellow">
             <img src="/Public/image/man.png" alt="humans" />
             <div class="text">
               <p>
                 <span>Get a cup of coffee for free on sunday morning </span>
-                Only at 7 to 9 AM
               </p>
+              <p>Only at 7 to 9 AM</p>
             </div>
           </div>
         </section>
-      </main>
-      <!-- end  kupon -->
-      <div class="btn">
-        <button class="Rectangle"></button>
-        <button class="circle"></button>
-        <button class="circle"></button>
-        <button class="circle"></button>
+        <!-- end  kupon -->
+        <div class="dot">
+          <button class="Rectangle"></button>
+          <button class="circle"></button>
+          <button class="circle"></button>
+          <button class="circle"></button>
+        </div>
       </div>
-      <h1 class="our-product">Our <span>Product</span></h1>
-      <!-- start product -->
-      <main class="product">
-        <section class="filter">
-          <div class="content-one">
-            <aside class="one">
-              <p>filter</p>
-              <p>Reset Filter</p>
-            </aside>
-            <aside class="two">
-              <label for="search">Search</label>
-              <div class="input">
-                <input
-                  type="text"
-                  id="search"
-                  placeholder="search Your Product"
-                />
-              </div>
-            </aside>
-            <aside class="three">
-              <p>Category</p>
-              <div class="checkbox">
-                <input type="checkbox" id="check" />
-                <label for="check">Favorite Product</label>
-              </div>
-              <div class="checkbox">
-                <input type="checkbox" id="check" />
-                <label for="check">Coffee</label>
-              </div>
-              <div class="checkbox">
-                <input type="checkbox" id="check" />
-                <label for="check">Non Coffee</label>
-              </div>
-              <div class="checkbox">
-                <input type="checkbox" id="check" />
-                <label for="check">Foods</label>
-              </div>
-              <div class="checkbox">
-                <input type="checkbox" id="check" />
-                <label for="check">Add-On</label>
-              </div>
-            </aside>
-            <aside class="four">
-              <p>Sort By</p>
-              <div class="checkbox">
-                <input type="checkbox" id="check" />
-                <label for="check">Buy 1 get 1</label>
-              </div>
-              <div class="checkbox">
-                <input type="checkbox" id="check" />
-                <label for="check">Flash sale</label>
-              </div>
-              <div class="checkbox">
-                <input type="checkbox" id="check" />
-                <label for="check">Birthday Package</label>
-              </div>
-              <div class="checkbox">
-                <input type="checkbox" id="check" />
-                <label for="check">Cheap</label>
-              </div>
-            </aside>
-          </div>
-        </section>
-        <section class="category">
-          <section>
-            <div><img src="/Public/image/image1.png" alt="ice-blend" /></div>
-            <div class="desc">
-              <h3>Hajelnut Latte</h3>
-              <p>
-                You can explore the menu that we provide with fun and have their
-                own taste and make your day better.
-              </p>
-              <h2>IDR 20.000</h2>
-              <div class="buy">
-                <button class="buy-one">Buy</button>
-                <button class="market">
-                  <img src="/Public/svg/icons-market.svg" alt="icons-market" />
-                </button>
-              </div>
-            </div>
-          </section>
-          <section>
-            <div><img src="/Public/image/image1.png" alt="ice-blend" /></div>
-            <div class="desc">
-              <h3>Hajelnut Latte</h3>
-              <p>
-                You can explore the menu that we provide with fun and have their
-                own taste and make your day better.
-              </p>
-              <h2>IDR 20.000</h2>
-              <div class="buy">
-                <button class="buy-one">Buy</button>
-                <button class="market">
-                  <img src="/Public/svg/icons-market.svg" alt="icons-market" />
-                </button>
-              </div>
-            </div>
-          </section>
-        </section>
-      </main>
+    </div>
 
+    <div class="wrapper">
+      <!-- start header -->
+      <main class="container">
+        <!-- end header  -->
+
+        <h1 class="our-product">Our <span>Product</span></h1>
+        <!-- start product -->
+        <main class="product">
+          <aside class="filter desktop-only">
+            <div class="content-one">
+              <div class="one">
+                <p>filter</p>
+                <p>Reset Filter</p>
+              </div>
+              <div class="two">
+                <label for="search">Search</label>
+                <div class="input">
+                  <input
+                    type="text"
+                    id="search"
+                    placeholder="search Your Product"
+                  />
+                </div>
+              </div>
+              <div class="three">
+                <p class="category-title">Category</p>
+                <div class="checkbox">
+                  <input type="checkbox" id="check" />
+                  <label for="check">Favorite Product</label>
+                </div>
+                <div class="checkbox">
+                  <input type="checkbox" id="check" />
+                  <label for="check">Coffee</label>
+                </div>
+                <div class="checkbox">
+                  <input type="checkbox" id="check" />
+                  <label for="check">Non Coffee</label>
+                </div>
+                <div class="checkbox">
+                  <input type="checkbox" id="check" />
+                  <label for="check">Foods</label>
+                </div>
+                <div class="checkbox">
+                  <input type="checkbox" id="check" />
+                  <label for="check">Add-On</label>
+                </div>
+              </div>
+              <div class="four">
+                <p class="category-title">Sort By</p>
+                <div class="checkbox">
+                  <input type="checkbox" id="check" />
+                  <label for="check">Buy 1 get 1</label>
+                </div>
+                <div class="checkbox">
+                  <input type="checkbox" id="check" />
+                  <label for="check">Flash sale</label>
+                </div>
+                <div class="checkbox">
+                  <input type="checkbox" id="check" />
+                  <label for="check">Birthday Package</label>
+                </div>
+                <div class="checkbox">
+                  <input type="checkbox" id="check" />
+                  <label for="check">Cheap</label>
+                </div>
+                <p class="category-title">Range Price</p>
+                <div class="input-slider">
+                  <div class="range">
+                    <div class="range-slider">
+                      <span class="range-selected"></span>
+                    </div>
+                    <div class="range-input">
+                      <input
+                        type="range"
+                        class="min"
+                        min="0"
+                        max="1000"
+                        value="300"
+                        step="10"
+                      />
+                      <input
+                        type="range"
+                        class="max"
+                        min="0"
+                        max="1000"
+                        value="700"
+                        step="10"
+                      />
+                    </div>
+                    <div class="range-price">
+                      <label for="min">IDR</label>
+                      <input
+                        type="text"
+                        readonly
+                        name="min"
+                        value="300"
+                        class="range-output"
+                      />
+                      <label for="max">IDR</label>
+                      <input
+                        type="text"
+                        readonly
+                        name="max"
+                        value="700"
+                        class="range-output"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <button class="apply-btn">Apply Filter</button>
+              </div>
+            </div>
+          </aside>
+          <section>
+            <div class="category">
+              <div class="product-card">
+                <div class="badge">FLASH SALE!</div>
+                <div>
+                  <img
+                    src="/Public/image/image3.png"
+                    alt="ice-blend"
+                    class="menu"
+                  />
+                </div>
+                <div class="desc-card">
+                  <div class="desc">
+                    <h3>Hajelnut Latte</h3>
+                    <p>
+                      You can explore the menu that we provide with fun and have
+                      their own taste and make your day better.
+                    </p>
+                    <h2>IDR 20.000</h2>
+                    <div class="buy">
+                      <button class="buy-one">Buy</button>
+                      <button class="market">
+                        <img
+                          src="/Public/svg/icons-market.svg"
+                          alt="icons-market"
+                        />
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="product-card">
+                <div class="badge">FLASH SALE!</div>
+                <div>
+                  <img
+                    src="/Public/image/image4.png"
+                    alt="ice-blend"
+                    class="menu"
+                  />
+                </div>
+                <div class="desc-card">
+                  <div class="desc">
+                    <h3>Hajelnut Latte</h3>
+                    <p>
+                      You can explore the menu that we provide with fun and have
+                      their own taste and make your day better.
+                    </p>
+                    <h2>IDR 20.000</h2>
+                    <div class="buy">
+                      <button class="buy-one">Buy</button>
+                      <button class="market">
+                        <img
+                          src="/Public/svg/icons-market.svg"
+                          alt="icons-market"
+                        />
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="product-card">
+                <div class="badge">FLASH SALE!</div>
+                <div>
+                  <img
+                    src="/Public/image/image3.png"
+                    alt="ice-blend"
+                    class="menu"
+                  />
+                </div>
+                <div class="desc-card">
+                  <div class="desc">
+                    <h3>Hajelnut Latte</h3>
+                    <p>
+                      You can explore the menu that we provide with fun and have
+                      their own taste and make your day better.
+                    </p>
+                    <h2>IDR 20.000</h2>
+                    <div class="buy">
+                      <button class="buy-one">Buy</button>
+                      <button class="market">
+                        <img
+                          src="/Public/svg/icons-market.svg"
+                          alt="icons-market"
+                        />
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="product-card">
+                <div class="badge">FLASH SALE!</div>
+                <div>
+                  <img
+                    src="/Public/image/image4.png"
+                    alt="ice-blend"
+                    class="menu"
+                  />
+                </div>
+                <div class="desc-card">
+                  <div class="desc">
+                    <h3>Hajelnut Latte</h3>
+                    <p>
+                      You can explore the menu that we provide with fun and have
+                      their own taste and make your day better.
+                    </p>
+                    <h2>IDR 20.000</h2>
+                    <div class="buy">
+                      <button class="buy-one">Buy</button>
+                      <button class="market">
+                        <img
+                          src="/Public/svg/icons-market.svg"
+                          alt="icons-market"
+                        />
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="product-card">
+                <div class="badge">FLASH SALE!</div>
+                <div>
+                  <img
+                    src="/Public/image/image3.png"
+                    alt="ice-blend"
+                    class="menu"
+                  />
+                </div>
+                <div class="desc-card">
+                  <div class="desc">
+                    <h3>Hajelnut Latte</h3>
+                    <p>
+                      You can explore the menu that we provide with fun and have
+                      their own taste and make your day better.
+                    </p>
+                    <h2>IDR 20.000</h2>
+                    <div class="buy">
+                      <button class="buy-one">Buy</button>
+                      <button class="market">
+                        <img
+                          src="/Public/svg/icons-market.svg"
+                          alt="icons-market"
+                        />
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="product-card">
+                <div class="badge">FLASH SALE!</div>
+                <div>
+                  <img
+                    src="/Public/image/image3.png"
+                    alt="ice-blend"
+                    class="menu"
+                  />
+                </div>
+                <div class="desc-card">
+                  <div class="desc">
+                    <h3>Hajelnut Latte</h3>
+                    <p>
+                      You can explore the menu that we provide with fun and have
+                      their own taste and make your day better.
+                    </p>
+                    <h2>IDR 20.000</h2>
+                    <div class="buy">
+                      <button class="buy-one">Buy</button>
+                      <button class="market">
+                        <img
+                          src="/Public/svg/icons-market.svg"
+                          alt="icons-market"
+                        />
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="page">
+              <button class="page-btn active">1</button>
+              <button class="page-btn">2</button>
+              <button class="page-btn">3</button>
+              <button class="page-btn">4</button>
+              <button class="page-btn active">
+                <img src="/Public/icons/arrowright.png" alt="page" />
+              </button>
+            </div>
+          </section>
+        </main>
+      </main>
       <!-- end product -->
     </div>
+    <footer class="footers wrapper">
+      <div class="container">
+        <div class="finish">
+          <section class="footer one">
+            <img src="/Public/image/iconCoffee.png" alt="coffee" />
+            <p>
+              Coffee Shop is a store that sells some good meals, and especially
+              coffee. We provide high quality beans
+            </p>
+          </section>
+          <div style="display: flex; gap: 106px">
+            <section class="footer two">
+              <h3>Product</h3>
+              <p>Our Product</p>
+              <p>Pricing</p>
+              <p>Locations</p>
+              <p>Countries</p>
+              <p>Blog</p>
+            </section>
+            <section class="footer three">
+              <h3>Engage</h3>
+              <p>Partner</p>
+              <p>FAQ</p>
+              <p>About Us</p>
+              <p>Privacy Policy</p>
+              <p>Terms of Service</p>
+            </section>
+          </div>
+          <section class="footer four">
+            <h3>Social Media</h3>
+            <div class="media">
+              <button>
+                <img src="/Public/icons/facebook.png" alt="facebook" />
+              </button>
+              <button>
+                <img src="/Public/icons/Twitter.png" alt="twitter" />
+              </button>
+              <button>
+                <img src="/Public/icons/Instagram.png" alt="instagram" />
+              </button>
+            </div>
+          </section>
+        </div>
+        <p class="copyright">©2020CoffeeStore</p>
+      </div>
+    </footer>
+    <script src="./script.js"></script>
   </body>
 </html>

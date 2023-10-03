@@ -95,9 +95,12 @@ p.login {
   width: 100%;
   display: inline-block;
 }
+a {
+  text-decoration: none;
+  color: black;
+}
 p.login a {
   color: #ff8906;
-  text-decoration: none;
 }
 
 .outside-button {

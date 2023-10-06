@@ -157,9 +157,10 @@
           <h1 class="md:font-title font-medium text-2xl text-[#0B132A]">
             Payment Details
           </h1>
-          <div class="grid-template">
+
+          <div class="grid-template mt-[44px] md:mt-[31px]">
             <section class="col-span-7">
-              <div class="mt-[44px] md:mt-[31px] flex justify-between">
+              <div class="w-full flex justify-between">
                 <p class="font-xl">Your Order</p>
                 <button
                   class="btn rounded-[6px] font-md font-medium bg-primary"
@@ -177,14 +178,18 @@
                   >
                     FLASH SALE!
                   </button>
-                  <h2 class="mt-4 font-xl font-bold">Hazelnut Latte</h2>
-                  <p class="mt-4">2pcs | Regular | Ice | Dine In</p>
+                  <h2 class="mt-4 md:font-xl font-bold font-md">
+                    Hazelnut Latte
+                  </h2>
+                  <p class="mt-4 font-sm md:font-md">
+                    2pcs | Regular | Ice | Dine In
+                  </p>
                   <div class="mt-4 flex gap-2 items-end">
                     <div class="flex items-center gap-3">
                       <p class="font-sm">
-                        <s class="text-danger">IDR 40.000</s>
+                        <s class="text-danger font-sm md:font-md">IDR 40.000</s>
                       </p>
-                      <p>IDR 20.000</p>
+                      <p class="font-sm md:font-md">IDR 20.000</p>
                     </div>
                   </div>
                 </div>
@@ -199,20 +204,68 @@
                   >
                     FLASH SALE!
                   </button>
-                  <h2 class="mt-4 font-xl font-bold">Hazelnut Latte</h2>
-                  <p class="mt-4">2pcs | Regular | Ice | Dine In</p>
+                  <h2 class="mt-4 md:font-xl font-bold font-md">
+                    Hazelnut Latte
+                  </h2>
+                  <p class="mt-4 font-sm md:font-md">
+                    2pcs | Regular | Ice | Dine In
+                  </p>
                   <div class="mt-4 flex gap-2 items-end">
                     <div class="flex items-center gap-3">
                       <p class="font-sm">
-                        <s class="text-danger">IDR 40.000</s>
+                        <s class="text-danger font-sm md:font-md">IDR 40.000</s>
                       </p>
-                      <p>IDR 20.000</p>
+                      <p class="font-sm md:font-md">IDR 20.000</p>
                     </div>
                   </div>
                 </div>
               </div>
             </section>
-            <section class="col-span-5"></section>
+            <section class="col-span-5">
+              <div class="py-[10px]">
+                <h2 class="font-xl md:font-xxl">Total</h2>
+              </div>
+              <div class="flex mt-[12px] items-center py-4 px-5 bg-light-gray">
+                <div class="w-full">
+                  <div class="flex justify-between font-xl pb-5">
+                    <p class="text-[#4F5665]">Order</p>
+                    <p>Idr. 40.000</p>
+                  </div>
+                  <div class="flex justify-between font-xl pb-5">
+                    <p class="text-[#4F5665]">Delivery</p>
+                    <p>Idr. 0</p>
+                  </div>
+                  <div class="flex justify-between font-xl pb-5">
+                    <p class="text-[#4F5665]">Tax</p>
+                    <p>Idr.4000</p>
+                  </div>
+                  <div
+                    class="border border-solid w-full border-[#E8E8E8] mb-5"
+                  ></div>
+                  <div class="flex justify-between font-xl pb-5">
+                    <p class="text-[#4F5665]">Sub Total</p>
+                    <p>Idr.44.000</p>
+                  </div>
+                  <button class="w-full btn py-2 rounded-md bg-primary mb-5">
+                    checkout
+                  </button>
+                  <p class="text-[#4F5665] font-lg pb-5">We Accept</p>
+                  <div class="flex items-center gap-8 justify-around pb-5">
+                    <img src="/public/icons/bri.webp" alt="bri" />
+                    <img src="/public/icons/dana.webp" alt="dana" />
+                    <img src="/public/icons/bca.webp" alt="bca" />
+                    <img src="/public/icons/gopay.webp" alt="gopay" />
+                    <img src="/public/icons/ovo.webp" alt="ovo" />
+                    <img src="/public/icons/paypal.webp" alt="paypal" />
+                  </div>
+                  <div>
+                    <p class="font-lg text-[#4F5665]">
+                      *Get Discount if you pay with Bank Central Asia
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </section>
           </div>
           <h1>Payment Info & Delivery</h1>
         </div>

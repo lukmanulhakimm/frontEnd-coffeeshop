@@ -16,6 +16,7 @@ module.exports = {
         gray: "#C3BEB7",
         "light-gray": "#F8F8F8",
         black: "#0B0909",
+        danger: "#D00000",
       },
     },
   },

@@ -25,7 +25,7 @@
   </head>
   <body class="font-jakarta">
     <header
-      class="wrapper items-center bg-transparent absolute top-0 left-0 w-full z-10"
+      class="wrapper items-center bg-transparent fixed top-0 left-0 w-full z-10"
     >
       <nav class="container bg-white">
         <div class="flex items-center justify-between relative">
@@ -97,6 +97,13 @@
                     >History</a
                   >
                 </li>
+                <li class="group">
+                  <a
+                    href=""
+                    class="text-base text-black py-2 mx-8 group-hover:text-primary"
+                    >Log Out</a
+                  >
+                </li>
               </ul>
             </div>
           </div>
@@ -130,6 +137,13 @@
                       >History</a
                     >
                   </li>
+                  <li class="group">
+                    <a
+                      href=""
+                      class="text-base text-black py-2 mx-8 group-hover:text-primary"
+                      >Log Out</a
+                    >
+                  </li>
                 </ul>
               </div>
             </div>
@@ -137,41 +151,75 @@
         </div>
       </nav>
     </header>
-    <main>
+    <main class="mt-[118px]">
       <div class="wrapper">
         <div class="container">
-          <h1>Payment Details</h1>
+          <h1 class="md:font-title font-medium text-2xl text-[#0B132A]">
+            Payment Details
+          </h1>
           <div class="grid-template">
-            <div class="col-span-7">
-              <p>Your Order</p>
-              <div class="flex">
+            <section class="col-span-7">
+              <div class="mt-[44px] md:mt-[31px] flex justify-between">
+                <p class="font-xl">Your Order</p>
+                <button
+                  class="btn rounded-[6px] font-md font-medium bg-primary"
+                >
+                  Add Item
+                </button>
+              </div>
+              <div
+                class="flex bg-light-gray p-[10px] gap-7 items-center mt-[21px]"
+              >
                 <img src="/public/image/coffee1.webp" alt="checkout" />
-                <div class="flex items-center px-7">
-                  <div>
-                    <button>FLASH SALE!</button>
-                    <h2>Hazelnut Latte</h2>
-                    <div class="flex">
-                      <p>2Pcs</p>
-                      <p>Regular</p>
-                      <p>Ice</p>
-                      <p>Dine In</p>
-                    </div>
-                    <div>
-                      <p>IDR 40.000</p>
+                <div>
+                  <button
+                    class="btn py-0 text-white font-sm leading-[24px] whitespace-nowrap px-[10px] rounded-3xl bg-danger"
+                  >
+                    FLASH SALE!
+                  </button>
+                  <h2 class="mt-4 font-xl font-bold">Hazelnut Latte</h2>
+                  <p class="mt-4">2pcs | Regular | Ice | Dine In</p>
+                  <div class="mt-4 flex gap-2 items-end">
+                    <div class="flex items-center gap-3">
+                      <p class="font-sm">
+                        <s class="text-danger">IDR 40.000</s>
+                      </p>
                       <p>IDR 20.000</p>
                     </div>
                   </div>
                 </div>
               </div>
-            </div>
-            <div class="col-span-5"></div>
+              <div
+                class="flex bg-light-gray p-[10px] gap-7 items-center mt-[21px]"
+              >
+                <img src="/public/image/coffee1.webp" alt="checkout" />
+                <div>
+                  <button
+                    class="btn py-0 text-white font-sm leading-[24px] whitespace-nowrap px-[10px] rounded-3xl bg-danger"
+                  >
+                    FLASH SALE!
+                  </button>
+                  <h2 class="mt-4 font-xl font-bold">Hazelnut Latte</h2>
+                  <p class="mt-4">2pcs | Regular | Ice | Dine In</p>
+                  <div class="mt-4 flex gap-2 items-end">
+                    <div class="flex items-center gap-3">
+                      <p class="font-sm">
+                        <s class="text-danger">IDR 40.000</s>
+                      </p>
+                      <p>IDR 20.000</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <section class="col-span-5"></section>
           </div>
           <h1>Payment Info & Delivery</h1>
         </div>
       </div>
     </main>
-    <footer class="wrapper mt-24">
-      <div class="container bg-white">
+    <footer class="wrapper mt-24 bg-light-gray py-[50px]">
+      <div class="container">
         <div class="grid-template">
           <div class="col-span-12 md:col-span-4 lg:col-span-4 xl:col-span-4">
             <div class="flex items-center gap-4">
@@ -192,21 +240,21 @@
             class="col-span-4 md:col-span-2 lg:col-span-2 xl:col-span-2 font-md"
           >
             <h2 class="font-xl pb-3">Product</h2>
-            <p class="pb-3">Our Product</p>
-            <p class="pb-3">Princing</p>
-            <p class="pb-3">Location</p>
-            <p class="pb-3">Countries</p>
-            <p class="pb-3">Blog</p>
+            <p class="pb-3 clickable">Our Product</p>
+            <p class="pb-3 clickable">Princing</p>
+            <p class="pb-3 clickable">Location</p>
+            <p class="pb-3 clickable">Countries</p>
+            <p class="pb-3 clickable">Blog</p>
           </div>
           <div
             class="col-span-4 md:col-span-2 lg:col-span-2 xl:col-span-2 font-md"
           >
             <h2 class="font-xl pb-3">Engage</h2>
-            <p class="pb-3">Partner</p>
-            <p class="pb-3">FAQ</p>
-            <p class="pb-3">About Us</p>
-            <p class="pb-3">Privacy Policy</p>
-            <p class="pb-3">Terms of Service</p>
+            <p class="pb-3 clickable">Partner</p>
+            <p class="pb-3 clickable">FAQ</p>
+            <p class="pb-3 clickable">About Us</p>
+            <p class="pb-3 clickable">Privacy Policy</p>
+            <p class="pb-3 clickable">Terms of Service</p>
           </div>
           <div class="col-span-5 md:col-span-4 lg:col-span-4 xl:col-span-4">
             <h2 class="font-xl pb-6">Social Media</h2>
@@ -214,17 +262,17 @@
               <img
                 src="/public/icons/facebook.webp"
                 alt="facebook"
-                class="bg-black rounded-full"
+                class="bg-black rounded-full clickable"
               />
               <img
                 src="/public/icons/twitter.webp"
                 alt="twitter"
-                class="bg-black rounded-full"
+                class="bg-black rounded-full clickable"
               />
               <img
                 src="/public/icons/instagram.webp"
                 alt="instagram"
-                class="bg-black rounded-full"
+                class="bg-black rounded-full clickable"
               />
             </div>
           </div>
@@ -232,6 +280,6 @@
       </div>
     </footer>
 
-    <script src="./public/js/global.js"></script>
+    <script src="/public/js/global.js"></script>
   </body>
 </html>

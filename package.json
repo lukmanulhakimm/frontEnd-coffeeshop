@@ -1,0 +1,9 @@
+{
+  "scripts": {
+    "dev": "nodemon index.js",
+    "start": "npx tailwindcss -i ./global.css -o ./public/css/output.css --watch"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.3.3"
+  }
+}

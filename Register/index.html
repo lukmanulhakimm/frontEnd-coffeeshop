@@ -28,10 +28,10 @@
     <main class="wrapper w-full">
       <div class="grid-template w-full">
         <div
-          class="md:block col-span-4 hidden h-screen max-h-full sticky top-0 bg-[url('/public/image/backgorund-1.webp')] bg-cover bg-no-repeat"
+          class="md:block col-span-4 hidden h-screen max-h-full bg-center sticky top-0 bg-[url('/public/image/backgorund-1.webp')] bg-cover bg-no-repeat"
         ></div>
         <div
-          class="md:col-span-8 col-span-12 container md:pl-[38px] md:pr-[130px]"
+          class="md:col-span-8 col-span-12 container md:pl-[38px] md:pr-[130px] py-[32px] md:max-w-full"
         >
           <div class="w-full">
             <div class="flex items-center gap-4">
@@ -71,7 +71,6 @@
                   class="input-control focus-within:input-focus"
                 />
               </div>
-
               <label for="password">Password</label>
               <div class="form-control">
                 <span
@@ -103,26 +102,36 @@
                 /></span>
               </div>
               <button
-                class="btn w-full bg-primary font-md cursor-pointer text-black"
+                class="btn w-full mt-6 bg-primary font-md py-[15px] cursor-pointer text-black"
               >
-                Register
+                <a href="" class="font-medium font-lg clickable">Register</a>
               </button>
             </form>
             <div class="wrapper">
               <div class="pt-5">
                 <p class="font-lg text-[#4F5665]">
-                  Have An Account? <a class="text-primary"> Login</a>
+                  Have An Account?
+                  <a href="/login/index.html" class="text-primary clickable">
+                    Login</a
+                  >
                 </p>
               </div>
             </div>
-            <div>
-              <button>
-                <img src="/public/icons/bx_bxl-facebook-circle.webp" alt="" />
-                <h2></h2>
+            <div class="flex w-full justify-center items-center gap-3 mt-16">
+              <button
+                class="flex w-[23.938rem] justify-center items-center rounded-md shadow py-5"
+              >
+                <img
+                  src="/public/icons/bx_bxl-facebook-circle.webp"
+                  alt="facebook"
+                />
+                <h2>Facebook</h2>
               </button>
-              <button>
-                <img src="" alt="" />
-                <h2></h2>
+              <button
+                class="flex w-[23.938rem] justify-center items-center rounded-md shadow py-5"
+              >
+                <img src="/public/icons/google.webp" alt="facebook" />
+                <h2>Google</h2>
               </button>
             </div>
           </div>

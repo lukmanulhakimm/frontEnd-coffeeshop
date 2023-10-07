@@ -16,6 +16,11 @@
       @apply max-w-[1440px] px-[20px] md:px-[60px] lg:px-[120px];
     }
 
+    .home-gradient{
+      background: linear-gradient(168.18deg, #777C82 -114.74%, #0B0909 91.35%);
+
+    }
+
     .section-title-text {
       @apply font-jakarta text-[48px] leading-[60px] font-medium;
     }

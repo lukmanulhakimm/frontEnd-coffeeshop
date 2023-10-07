@@ -55,7 +55,7 @@
     }
 
     .btn {
-      @apply flex justify-center px-[12px] py-[8px] rounded-2xl clickable
+      @apply flex justify-center px-[12px] py-[8px] rounded-[6px] clickable
     }
 
 
@@ -84,14 +84,16 @@
       border: 1px solid #dedede;
     }
     .input-focus {
-      @apply border-none outline-none;
-      border: 1px solid #dedede;
+      @apply border-none outline-none ;
     }
+
     .input-control {
       @apply py-3 w-full rounded-md bg-inherit font-normal
     }
     
-    .shadow-sm {
+    .shadow {
+      box-shadow: 0px 4px 10px 0px #00000014;
+
     }
    
     

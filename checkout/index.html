@@ -159,7 +159,7 @@
           </h1>
 
           <div class="grid-template mt-[44px] md:mt-[31px]">
-            <section class="col-span-7">
+            <section class="col-span-12 lg:col-span-7 order-1 lg:order-1">
               <div class="w-full flex justify-between">
                 <p class="font-xl">Your Order</p>
                 <button
@@ -169,7 +169,7 @@
                 </button>
               </div>
               <div
-                class="flex bg-light-gray p-[10px] gap-7 items-center mt-[21px]"
+                class="flex bg-light-gray p-[10px] gap-7 items-center mt-[21px] relative"
               >
                 <img src="/public/image/coffee1.webp" alt="checkout" />
                 <div>
@@ -189,13 +189,18 @@
                       <p class="font-sm">
                         <s class="text-danger font-sm md:font-md">IDR 40.000</s>
                       </p>
-                      <p class="font-sm md:font-md">IDR 20.000</p>
+                      <p class="font-sm md:font-md font-medium text-primary">
+                        IDR 20.000
+                      </p>
                     </div>
                   </div>
+                </div>
+                <div class="absolute top-0 p-[10px] right-0 clickable">
+                  <img src="/public/icons/close.png" alt="close" />
                 </div>
               </div>
               <div
-                class="flex bg-light-gray p-[10px] gap-7 items-center mt-[21px]"
+                class="flex bg-light-gray p-[10px] gap-7 items-center mt-[21px] relative"
               >
                 <img src="/public/image/coffee1.webp" alt="checkout" />
                 <div>
@@ -215,17 +220,22 @@
                       <p class="font-sm">
                         <s class="text-danger font-sm md:font-md">IDR 40.000</s>
                       </p>
-                      <p class="font-sm md:font-md">IDR 20.000</p>
+                      <p class="font-sm md:font-md font-medium text-primary">
+                        IDR 20.000
+                      </p>
                     </div>
                   </div>
                 </div>
+                <div class="absolute top-0 p-[10px] right-0 clickable">
+                  <img src="/public/icons/close.png" alt="close" />
+                </div>
               </div>
             </section>
-            <section class="col-span-5">
+            <section class="col-span-12 lg:col-span-5 order-3 lg:order-2">
               <div class="py-[10px]">
                 <h2 class="font-xl md:font-xxl">Total</h2>
               </div>
-              <div class="flex mt-[12px] items-center py-4 px-5 bg-light-gray">
+              <div class="flex mt-[8px] items-center py-4 px-5 bg-light-gray">
                 <div class="w-full">
                   <div class="flex justify-between font-xl pb-5">
                     <p class="text-[#4F5665]">Order</p>
@@ -233,30 +243,68 @@
                   </div>
                   <div class="flex justify-between font-xl pb-5">
                     <p class="text-[#4F5665]">Delivery</p>
-                    <p>Idr. 0</p>
+                    <p class="font-bold">Idr. 0</p>
                   </div>
                   <div class="flex justify-between font-xl pb-5">
                     <p class="text-[#4F5665]">Tax</p>
-                    <p>Idr.4000</p>
+                    <p class="font-bold">Idr.4000</p>
                   </div>
                   <div
                     class="border border-solid w-full border-[#E8E8E8] mb-5"
                   ></div>
                   <div class="flex justify-between font-xl pb-5">
                     <p class="text-[#4F5665]">Sub Total</p>
-                    <p>Idr.44.000</p>
+                    <p class="font-bold">Idr.44.000</p>
                   </div>
-                  <button class="w-full btn py-2 rounded-md bg-primary mb-5">
-                    checkout
+                  <button
+                    class="w-full font-semibold btn py-2 rounded-md bg-primary mb-5"
+                  >
+                    Checkout
                   </button>
                   <p class="text-[#4F5665] font-lg pb-5">We Accept</p>
                   <div class="flex items-center gap-8 justify-around pb-5">
-                    <img src="/public/icons/bri.webp" alt="bri" />
-                    <img src="/public/icons/dana.webp" alt="dana" />
-                    <img src="/public/icons/bca.webp" alt="bca" />
-                    <img src="/public/icons/gopay.webp" alt="gopay" />
-                    <img src="/public/icons/ovo.webp" alt="ovo" />
-                    <img src="/public/icons/paypal.webp" alt="paypal" />
+                    <div>
+                      <img
+                        src="/public/icons/bri.webp"
+                        alt="bri"
+                        class="w-full"
+                      />
+                    </div>
+                    <div>
+                      <img
+                        src="/public/icons/dana.webp"
+                        alt="dana"
+                        class="w-full"
+                      />
+                    </div>
+                    <div>
+                      <img
+                        src="/public/icons/bca.webp"
+                        alt="bca"
+                        class="w-full"
+                      />
+                    </div>
+                    <div>
+                      <img
+                        src="/public/icons/gopay.webp"
+                        alt="gopay"
+                        class="w-full"
+                      />
+                    </div>
+                    <div>
+                      <img
+                        src="/public/icons/ovo.webp"
+                        alt="ovo"
+                        class="w-full"
+                      />
+                    </div>
+                    <div>
+                      <img
+                        src="/public/icons/paypal.webp"
+                        alt="paypal"
+                        class="w-full"
+                      />
+                    </div>
                   </div>
                   <div>
                     <p class="font-lg text-[#4F5665]">
@@ -266,8 +314,103 @@
                 </div>
               </div>
             </section>
+            <div class="w-full col-span-12 lg:col-span-7 order-2 lg:order-3">
+              <h2 class="font-xxl">Payment & Info Delivery</h2>
+              <form class="mt-[39px] font-lg font-semibold">
+                <label for="fullName">Email</label>
+                <div class="form-control">
+                  <span
+                    ><img src="/public/icons/mail.webp" alt="iconsHumans"
+                  /></span>
+                  <input
+                    type="text"
+                    id="fullName"
+                    class="focus-within:input-focus input-control"
+                    placeholder="Enter Your Email"
+                  />
+                </div>
+                <label for="email">Full Name</label>
+                <div class="form-control">
+                  <span
+                    ><img src="/public/icons/icon-name.webp" alt="email"
+                  /></span>
+                  <input
+                    type="text"
+                    id="email"
+                    placeholder="  Enter Your Full Name"
+                    class="input-control focus-within:input-focus"
+                  />
+                </div>
+                <label for="adrress">Adrress</label>
+                <div class="form-control">
+                  <span
+                    ><img src="/public/icons/Location.png" alt="adrress"
+                  /></span>
+                  <input
+                    type="adrress"
+                    id="adrress"
+                    placeholder=" Enter Your adrress"
+                    class="input-control focus-within:input-focus"
+                  />
+                  <span
+                    ><img src="/public/icons/EyeSlash.webp" alt="eyes"
+                  /></span>
+                </div>
+
+                <label for="email">Delivery</label>
+                <ul class="grid w-full gap-6 grid-cols-3 mt-[13px]">
+                  <li>
+                    <input
+                      type="radio"
+                      id="dine-in"
+                      name="delivery"
+                      value="dine-in"
+                      class="hidden peer"
+                      required
+                    />
+                    <label
+                      for="dine-in"
+                      class="btn rounded-[6px] text-center items-center justify-between w-full bg-white border border-[#E8E8E8] cursor-pointer peer-checked:border-primary"
+                    >
+                      <p class="w-full font-lg text-center">Dine in</p>
+                    </label>
+                  </li>
+                  <li>
+                    <input
+                      type="radio"
+                      id="door-delivery"
+                      name="delivery"
+                      value="door-delivery"
+                      class="hidden peer"
+                      required
+                    />
+                    <label
+                      for="door-delivery"
+                      class="btn rounded-[6px] text-center items-center justify-between w-full bg-white border border-[#E8E8E8] cursor-pointer peer-checked:border-primary"
+                    >
+                      <p class="w-full font-lg text-center">Door Delivery</p>
+                    </label>
+                  </li>
+                  <li>
+                    <input
+                      type="radio"
+                      id="pick-up"
+                      name="delivery"
+                      value="pick-up"
+                      class="hidden peer"
+                      required
+                    />
+                    <label
+                      for="pick-up"
+                      class="btn rounded-[6px] text-center items-center justify-between w-full bg-white border border-[#E8E8E8] cursor-pointer peer-checked:border-primary"
+                    >
+                      <p class="w-full font-lg text-center">Pick Up</p>
+                    </label>
+                  </li>
+                </ul>
+              </form>
+            </div>
           </div>
-          <h1>Payment Info & Delivery</h1>
         </div>
       </div>
     </main>

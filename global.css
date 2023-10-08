@@ -63,10 +63,15 @@
       @apply flex justify-center px-[12px] py-[8px] rounded-[6px] clickable items-center
     }
 
+    .mobile-only{
 
+    }
+    .filter-mobile{
+
+    }
     /* hamburger start */
     .hamburger-line {
-      @apply w-[30px] h-[2px] my-2 block bg-black;
+      @apply w-[30px] h-[2px] my-2 block bg-white;
     }
     
     .hamburger-active > span:nth-child(1) {
@@ -79,7 +84,10 @@
       @apply -rotate-45;
     }
     /* hamburger end */
+  /* checkbox start*/
   
+  /* checkbox end*/
+
     .icons {
       @apply w-8 h-8 cursor-pointer;
     }
@@ -103,3 +111,75 @@
    
     
   }
+  .input-slider .range-slider {
+    height: 5px;
+    position: relative;
+    background-color: white;
+    border-radius: 2px;
+  }
+  .input-slider .range-selected {
+    height: 100%;
+    left: 30%;
+    right: 30%;
+    position: absolute;
+    border-radius: 5px;
+    background-color: #ff8906;
+  }
+  
+  .input-slider .range-input {
+    position: relative;
+  }
+  .input-slider .range-input input {
+    position: absolute;
+    width: 100%;
+    height: 5px;
+    top: -7px;
+    background: none;
+    pointer-events: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+  }
+  .input-slider .range-input input::-webkit-slider-thumb {
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    border: 3px solid white;
+    background-color: #fff;
+    pointer-events: auto;
+    -webkit-appearance: none;
+  }
+  .input-slider .range-input input::-moz-range-thumb {
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    border: 3px solid #1b53c0;
+    background-color: #fff;
+    pointer-events: auto;
+    -moz-appearance: none;
+  }
+  
+  .input-slider .range-price {
+    margin: 20px 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .input-slider .range-price label {
+    margin-right: 5px;
+  }
+  .input-slider .range-price input {
+    width: 100px;
+    padding: 5px;
+    background: none;
+    color: white;
+    border: none;
+  }
+  .input-slider .range-price input:focus {
+    border: none;
+    outline: none;
+  }
+  .input-slider .range-price input:first-of-type {
+    margin-right: 15px;
+  }
+  

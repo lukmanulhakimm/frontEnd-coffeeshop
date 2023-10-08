@@ -153,7 +153,29 @@
       </nav>
     </header>
     <main class="mt-[100px]">
-      <div class="bg-[url(/public/image/bg-4.webp)] bg-cover text-white">
+      <div class="wrapper md:hidden">
+        <div class="container">
+          <div class="flex items-center gap-3 w-full">
+            <div class="form-control w-full">
+              <span
+                ><img src="/public/icons/search-2.webp" alt="Search"
+              /></span>
+              <input
+                type="text"
+                id="search"
+                placeholder="Find Product"
+                class="input-control focus-within:input-focus"
+              />
+            </div>
+            <button class="bg-primary rounded p-[15px]">
+              <img src="/public/icons/Filter.webp" alt="Filter" />
+            </button>
+          </div>
+        </div>
+      </div>
+      <div
+        class="bg-[url(/public/image/bg-4.webp)] bg-cover text-white hidden md:block"
+      >
         <div class="container">
           <div class="max-w-[880px] h-[305px] w-full flex items-center">
             <h1 class="font-medium text-5xl">
@@ -162,18 +184,501 @@
           </div>
         </div>
       </div>
-      <div class="container">
-        <div class="flex pt-12">
-          <h1 class="text-[#0B0909] text-5xl">
-            Today<span class="text-brown"> Promo</span>
+      <div class="wrapper">
+        <div class="container">
+          <div class="flex pt-12 items-center justify-between">
+            <h1 class="text-[#0B0909] md:text-5xl text-2xl">
+              Today<span class="text-brown"> Promo</span>
+            </h1>
+            <div class="md:flex gap-2 hidden">
+              <button class="rounded-full bg-[#E8E8E8] p-4">
+                <img src="/public/icons/arrow-left.webp" alt="arrow-left" />
+              </button>
+              <button class="rounded-full bg-primary p-4">
+                <img src="/public/icons/arrow-right.webp" alt="arrow-right" />
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="wrapper">
+        <div class="flex gap-12 overflow-x-hidden mt-[25px]">
+          <div
+            class="bg-[#88B788] rounded-3xl flex items-center gap-2 pt-[11px] min-w-[238px] md:min-w-[335px]"
+          >
+            <img src="/public/image/image-5.webp" alt="logo" />
+            <div class="max-w-[195px] w-full">
+              <div>
+                <h1 class="text-sm font-bold">HAPPY MOTHER’S DAY!</h1>
+                <p class="text-sm">Get one of our favorite menu for free!</p>
+              </div>
+              <p class="text-white font-medium pt-[13px]">Klaim Kupon</p>
+            </div>
+          </div>
+          <div
+            class="bg-[#88B788] rounded-3xl flex items-center gap-2 pt-[11px] pl-3 min-w-[238px] md:min-w-[335px]"
+          >
+            <img src="/public/image/image-5.webp" alt="logo" />
+            <div class="max-w-[195px] w-full">
+              <div class="">
+                <h1 class="text-sm font-bold">HAPPY MOTHER’S DAY!</h1>
+                <p class="text-sm">Get one of our favorite menu for free!</p>
+              </div>
+              <p class="text-white font-medium pt-[13px]">Klaim Kupon</p>
+            </div>
+          </div>
+          <div
+            class="bg-[#88B788] rounded-3xl flex items-center gap-2 pt-[11px] pl-3 min-w-[238px] md:min-w-[335px]"
+          >
+            <img src="/public/image/image-5.webp" alt="logo" />
+            <div class="max-w-[195px] w-full">
+              <div class="">
+                <h1 class="text-sm font-bold">HAPPY MOTHER’S DAY!</h1>
+                <p class="text-sm">Get one of our favorite menu for free!</p>
+              </div>
+              <p class="text-white font-medium pt-[13px]">Klaim Kupon</p>
+            </div>
+          </div>
+          <div
+            class="bg-[#F5C361] rounded-3xl flex items-center gap-2 pl-3 min-w-[238px] md:min-w-[335px]"
+          >
+            <img src="/public/image/image-6.webp" alt="logo" />
+            <div class="max-w-[195px] w-full">
+              <div class="">
+                <h1 class="text-sm font-bold">
+                  Get a cup of coffee for free on sunday morning
+                </h1>
+                <p class="text-sm">Only at 7 to 9 AM</p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="bg-[#F5C361] rounded-3xl flex items-center gap-2 pl-3 min-w-[238px] md:min-w-[335px]"
+          >
+            <img src="/public/image/image-6.webp" alt="logo" />
+            <div class="max-w-[195px] w-full">
+              <div class="">
+                <h1 class="text-sm font-bold">
+                  Get a cup of coffee for free on sunday morning
+                </h1>
+                <p class="text-sm">Only at 7 to 9 AM</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="wrapper">
+        <div class="container">
+          <div class="flex gap-2 pt-[25px]">
+            <div class="bg-primary rounded-lg w-[25px] h-[8.44px]"></div>
+            <div class="rounded-full bg-[#DDE0E4] w-2 h-2"></div>
+            <div class="rounded-full bg-[#DDE0E4] w-2 h-2"></div>
+            <div class="rounded-full bg-[#DDE0E4] w-2 h-2"></div>
+          </div>
+          <h1 class="font-title mt-14">
+            Our <span class="text-brown"> Product</span>
           </h1>
-          <div class="flex">
-            <button>
-              <img src="" alt="" />
-            </button>
-            <button>
-              <img src="" alt="" />
-            </button>
+
+          <div class="grid-template">
+            <div class="md:col-span-4 hidden md:block">
+              <!-- sidebar -->
+              <div
+                class="bg-black text-white w-full py-[27px] px-[30px] flex flex-col gap-[16px] rounded-2xl"
+              >
+                <div class="flex justify-between w-full">
+                  <h2 class="font-xxl font-semibold">Filter</h2>
+                  <h2 class="text-lg font-bold">Reset Filter</h2>
+                </div>
+                <div>
+                  <h2 class="text-lg font-bold">Search</h2>
+                </div>
+                <div class="">
+                  <div class="form-control w-full">
+                    <input
+                      type="text"
+                      id="search"
+                      placeholder="Search Your Product"
+                      class="input-control focus-within:input-focus text-black"
+                    />
+                  </div>
+                </div>
+                <div class="flex flex-col gap-4">
+                  <p class="font-bold">Category</p>
+                  <div class="flex gap-3">
+                    <input type="checkbox" class="accent-primary w-4 h-4" />
+                    <label for="check">Favorite Product</label>
+                  </div>
+                  <div class="flex gap-3">
+                    <input type="checkbox" class="accent-primary w-4 h-4" />
+                    <label for="check">Coffee</label>
+                  </div>
+                  <div class="flex gap-3">
+                    <input type="checkbox" class="accent-primary w-4 h-4" />
+                    <label for="check">Non Coffee</label>
+                  </div>
+                  <div class="flex gap-3">
+                    <input type="checkbox" class="accent-primary w-4 h-4" />
+                    <label for="check">Foods</label>
+                  </div>
+                  <div class="flex gap-3">
+                    <input type="checkbox" class="accent-primary w-4 h-4" />
+                    <label for="check">Add-On</label>
+                  </div>
+                </div>
+                <div class="flex flex-col gap-4">
+                  <p class="font-bold">Sort By</p>
+                  <div class="flex gap-3">
+                    <input type="checkbox" class="accent-primary w-4 h-4" />
+                    <label for="check">Buy 1 get 1</label>
+                  </div>
+                  <div class="flex gap-3">
+                    <input type="checkbox" class="accent-primary w-4 h-4" />
+                    <label for="check">Flash sale</label>
+                  </div>
+                  <div class="flex gap-3">
+                    <input type="checkbox" class="accent-primary w-4 h-4" />
+                    <label for="check">Birthday Package</label>
+                  </div>
+                  <div class="flex gap-3">
+                    <input type="checkbox" class="accent-primary w-4 h-4" />
+                    <label for="check">Cheap</label>
+                  </div>
+                </div>
+                <p class="font-bold">Range Price</p>
+                <div class="input-slider">
+                  <div class="range">
+                    <div class="range-slider">
+                      <span class="range-selected"></span>
+                    </div>
+                    <div class="range-input">
+                      <input
+                        type="range"
+                        class="min"
+                        min="0"
+                        max="1000"
+                        value="300"
+                        step="10"
+                      />
+                      <input
+                        type="range"
+                        class="max"
+                        min="0"
+                        max="1000"
+                        value="700"
+                        step="10"
+                      />
+                    </div>
+                    <div class="range-price">
+                      <label for="min">IDR</label>
+                      <input
+                        type="text"
+                        readonly
+                        name="min"
+                        value="300"
+                        class="range-output"
+                      />
+                      <label for="max">IDR</label>
+                      <input
+                        type="text"
+                        readonly
+                        name="max"
+                        value="700"
+                        class="range-output"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  <button
+                    class="btn bg-primary w-full text-black text-base font-medium"
+                  >
+                    Apply FIlter
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="col-span-12 md:col-span-8">
+              <div
+                class="grid grid-cols-2 gap-[16px] md:gap-[24px] lg:gap-[32px]"
+              >
+                <div class="w-full relative">
+                  <div class="absolute top-2 right-0 p-2">
+                    <span
+                      class="p-[10px] bg-danger rounded-[24px] text-white font-bold"
+                      >FLASH SALE!</span
+                    >
+                  </div>
+                  <img
+                    src="/public/image/image-3.webp"
+                    alt="ice-blend"
+                    class="w-full"
+                  />
+                  <div class="w-full px-2 -mt-[30px] relative">
+                    <div class="bg-white p-3 shadow-md">
+                      <h1 class="font-xl md:font-xxl font-medium pb-3">
+                        Hazelnut Latte
+                      </h1>
+                      <p class="font-desc pb-3 text-[#4F5665]">
+                        You can explore the menu that we provide with fun and
+                        have their own taste and make your day better.
+                      </p>
+                      <h1 class="text-primary font-xxl pb-3">IDR 20.000</h1>
+                      <div class="flex flex-col gap-2 md:flex-row">
+                        <button
+                          class="btn text-center bg-primary rounded-md py-2 font-semibold w-full font-md"
+                        >
+                          Buy
+                        </button>
+                        <button
+                          class="btn border-primary border py-1 md:py-2 items-center md:w-[58px]"
+                        >
+                          <img
+                            src="/public/icons/market.webp"
+                            alt="shopping"
+                            class="md:w-full"
+                          />
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="w-full relative">
+                  <div class="absolute top-2 right-0 p-2">
+                    <span
+                      class="p-[10px] bg-danger rounded-[24px] text-white font-bold"
+                      >FLASH SALE!</span
+                    >
+                  </div>
+                  <img
+                    src="/public/image/image-4.webp"
+                    alt="ice-blend"
+                    class="w-full"
+                  />
+                  <div class="w-full px-2 -mt-[30px] relative">
+                    <div class="bg-white p-3 shadow-md">
+                      <h1 class="font-xl md:font-xxl font-medium pb-3">
+                        Hazelnut Latte
+                      </h1>
+                      <p class="font-desc pb-3 text-[#4F5665]">
+                        You can explore the menu that we provide with fun and
+                        have their own taste and make your day better.
+                      </p>
+                      <h1 class="text-primary font-xxl pb-3">IDR 20.000</h1>
+                      <div class="flex flex-col gap-2 md:flex-row">
+                        <button
+                          class="btn text-center bg-primary rounded-md py-2 font-semibold w-full font-md"
+                        >
+                          Buy
+                        </button>
+                        <button
+                          class="btn border-primary border py-1 md:py-2 items-center md:w-[58px]"
+                        >
+                          <img
+                            src="/public/icons/market.webp"
+                            alt="shopping"
+                            class="md:w-full"
+                          />
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="w-full relative">
+                  <div class="absolute top-2 right-0 p-2">
+                    <span
+                      class="p-[10px] bg-danger rounded-[24px] text-white font-bold"
+                      >FLASH SALE!</span
+                    >
+                  </div>
+                  <img
+                    src="/public/image/image-3.webp"
+                    alt="ice-blend"
+                    class="w-full"
+                  />
+                  <div class="w-full px-2 -mt-[30px] relative">
+                    <div class="bg-white p-3 shadow-md">
+                      <h1 class="font-xl md:font-xxl font-medium pb-3">
+                        Hazelnut Latte
+                      </h1>
+                      <p class="font-desc pb-3 text-[#4F5665]">
+                        You can explore the menu that we provide with fun and
+                        have their own taste and make your day better.
+                      </p>
+                      <h1 class="text-primary font-xxl pb-3">IDR 20.000</h1>
+                      <div class="flex flex-col gap-2 md:flex-row">
+                        <button
+                          class="btn text-center bg-primary rounded-md py-2 font-semibold w-full font-md"
+                        >
+                          Buy
+                        </button>
+                        <button
+                          class="btn border-primary border py-1 md:py-2 items-center md:w-[58px]"
+                        >
+                          <img
+                            src="/public/icons/market.webp"
+                            alt="shopping"
+                            class="md:w-full"
+                          />
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="w-full relative">
+                  <div class="absolute top-2 right-0 p-2">
+                    <span
+                      class="p-[10px] bg-danger rounded-[24px] text-white font-bold"
+                      >FLASH SALE!</span
+                    >
+                  </div>
+                  <img
+                    src="/public/image/image-4.webp"
+                    alt="ice-blend"
+                    class="w-full"
+                  />
+                  <div class="w-full px-2 -mt-[30px] relative">
+                    <div class="bg-white p-3 shadow-md">
+                      <h1 class="font-xl md:font-xxl font-medium pb-3">
+                        Hazelnut Latte
+                      </h1>
+                      <p class="font-desc pb-3 text-[#4F5665]">
+                        You can explore the menu that we provide with fun and
+                        have their own taste and make your day better.
+                      </p>
+                      <h1 class="text-primary font-xxl pb-3">IDR 20.000</h1>
+                      <div class="flex flex-col gap-2 md:flex-row">
+                        <button
+                          class="btn text-center bg-primary rounded-md py-2 font-semibold w-full font-md"
+                        >
+                          Buy
+                        </button>
+                        <button
+                          class="btn border-primary border py-1 md:py-2 items-center md:w-[58px]"
+                        >
+                          <img
+                            src="/public/icons/market.webp"
+                            alt="shopping"
+                            class="md:w-full"
+                          />
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="w-full relative">
+                  <div class="absolute top-2 right-0 p-2">
+                    <span
+                      class="p-[10px] bg-danger rounded-[24px] text-white font-bold"
+                      >FLASH SALE!</span
+                    >
+                  </div>
+                  <img
+                    src="/public/image/image-3.webp"
+                    alt="ice-blend"
+                    class="w-full"
+                  />
+                  <div class="w-full px-2 -mt-[30px] relative">
+                    <div class="bg-white p-3 shadow-md">
+                      <h1 class="font-xl md:font-xxl font-medium pb-3">
+                        Hazelnut Latte
+                      </h1>
+                      <p class="font-desc pb-3 text-[#4F5665]">
+                        You can explore the menu that we provide with fun and
+                        have their own taste and make your day better.
+                      </p>
+                      <h1 class="text-primary font-xxl pb-3">IDR 20.000</h1>
+                      <div class="flex flex-col gap-2 md:flex-row">
+                        <button
+                          class="btn text-center bg-primary rounded-md py-2 font-semibold w-full font-md"
+                        >
+                          Buy
+                        </button>
+                        <button
+                          class="btn border-primary border py-1 md:py-2 items-center md:w-[58px]"
+                        >
+                          <img
+                            src="/public/icons/market.webp"
+                            alt="shopping"
+                            class="md:w-full"
+                          />
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="w-full relative">
+                  <div class="absolute top-2 right-0 p-2">
+                    <span
+                      class="p-[10px] bg-danger rounded-[24px] text-white font-bold"
+                      >FLASH SALE!</span
+                    >
+                  </div>
+                  <img
+                    src="/public/image/image-4.webp"
+                    alt="ice-blend"
+                    class="w-full"
+                  />
+                  <div class="w-full px-2 -mt-[30px] relative">
+                    <div class="bg-white p-3 shadow-md">
+                      <h1 class="font-xl md:font-xxl font-medium pb-3">
+                        Hazelnut Latte
+                      </h1>
+                      <p class="font-desc pb-3 text-[#4F5665]">
+                        You can explore the menu that we provide with fun and
+                        have their own taste and make your day better.
+                      </p>
+                      <h1 class="text-primary font-xxl pb-3">IDR 20.000</h1>
+                      <div class="flex flex-col gap-2 md:flex-row">
+                        <button
+                          class="btn text-center bg-primary rounded-md py-2 font-semibold w-full font-md"
+                        >
+                          Buy
+                        </button>
+                        <button
+                          class="btn border-primary border py-1 md:py-2 items-center md:w-[58px]"
+                        >
+                          <img
+                            src="/public/icons/market.webp"
+                            alt="shopping"
+                            class="md:w-full"
+                          />
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="flex gap-5 justify-center items-center mt-8 w-full">
+                <button
+                  class="btn rounded-full bg-primary px-4 text-base font-medium"
+                >
+                  1
+                </button>
+                <button
+                  class="btn rounded-full bg-light-gray px-4 text-base font-medium"
+                >
+                  2
+                </button>
+                <button
+                  class="btn rounded-full bg-light-gray px-4 text-base font-medium"
+                >
+                  3
+                </button>
+                <button
+                  class="btn rounded-full bg-light-gray px-4 text-base font-medium"
+                >
+                  4
+                </button>
+                <button class="btn rounded-full bg-primary px-4">
+                  <img
+                    src="/public/icons/arrow-right2.webp"
+                    alt="arrow-right"
+                    class="w-6 h-6"
+                  />
+                </button>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -239,6 +744,7 @@
         </div>
       </div>
     </footer>
+    <script src="/public/js/input-range.js"></script>
     <script src="/public/js/global.js"></script>
   </body>
 </html>

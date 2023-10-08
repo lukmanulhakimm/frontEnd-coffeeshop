@@ -25,25 +25,27 @@
     <title>Home</title>
   </head>
   <body class="font-jakarta">
-    <header class="wrapper z-10 w-full fixed top-0 left-0">
+    <header class="wrapper z-10 w-full fixed top-0 left-0 bg-[#0B0909]/[13%]">
       <nav class="container">
         <div class="flex items-center justify-between relative">
           <div class="flex gap-16">
             <div class="flex items-center gap-4">
-              <img
-                src="/public/icons/coffee.webp"
-                alt="coffee"
-                class="text-brown"
-              />
+              <img src="/public/icons/coffee2.webp" alt="coffee" />
               <h2
-                class="font-bold text-lg block py-6 text-brown font-sacramento"
+                class="font-bold text-lg block py-6 text-white font-sacramento"
               >
                 Coffee Shop
               </h2>
             </div>
             <div class="lg:flex md:flex items-center gap-11 px-4 hidden">
-              <h2><a href="" class="font-md text-black">Home</a></h2>
-              <h2><a href="" class="font-md text-black">Product</a></h2>
+              <h2><a href="/" class="font-md text-white clickable">Home</a></h2>
+              <h2>
+                <a
+                  href="/product/index.html"
+                  class="font-md text-white clickable"
+                  >Product</a
+                >
+              </h2>
             </div>
           </div>
           <div class="flex items-center px-4 sm:hidden md:hidden lg:hidden">
@@ -70,28 +72,28 @@
               <ul class="block">
                 <li class="group">
                   <a
-                    href=""
+                    href="/index.html"
                     class="text-base text-black py-2 mx-8 group-hover:text-primary"
                     >Home</a
                   >
                 </li>
                 <li class="group">
                   <a
-                    href=""
+                    href="/product/index.html"
                     class="text-base text-black py-2 mx-8 group-hover:text-primary"
                     >Product</a
                   >
                 </li>
                 <li class="group">
                   <a
-                    href=""
+                    href="/profile/index.html"
                     class="text-base text-black py-2 mx-8 group-hover:text-primary"
                     >profile</a
                   >
                 </li>
                 <li class="group">
                   <a
-                    href=""
+                    href="/history-order/index.html"
                     class="text-base text-black py-2 mx-8 group-hover:text-primary"
                     >History</a
                   >
@@ -107,8 +109,12 @@
             </div>
           </div>
           <div class="lg:flex md:flex sm:flex items-center gap-5 hidden">
-            <img src="/public/icons/Search.webp" alt="Search" class="icon" />
-            <img src="/public/icons/makets.webp" alt="markets" class="icons" />
+            <img src="/public/icons/Search.webp" alt="Search" class="icons" />
+            <img
+              src="/public/icons/newmarket.webp"
+              alt="markets"
+              class="icons"
+            />
             <img src="/public/icons/profile.webp" alt="profile" class="icons" />
             <div>
               <img
@@ -119,12 +125,12 @@
               />
               <div
                 id="menu-down"
-                class="hidden absolute py-5 bg-white shadow-lg rounded-lg md:w-full right-4 top-full max-w-[200px]"
+                class="hidden absolute py-4 bg-white shadow-lg rounded-lg md:w-full right-4 top-full max-w-[200px]"
               >
-                <ul class="block">
+                <ul class="flex flex-col gap-3">
                   <li class="group">
                     <a
-                      href=""
+                      href="/profile/index.html"
                       class="text-base text-black py-2 mx-8 group-hover:text-primary"
                       >Profile</a
                     >
@@ -154,9 +160,7 @@
       <section class="md:wrapper w-full min-h-screen relative">
         <div
           class="md:hidden w-full h-[406px] bg-[url(/public/image/bg-3.webp)] bg-cover bg-center"
-        >
-          <!-- <img src="" alt="" /> -->
-        </div>
+        ></div>
         <div class="hidden md:block md:home-gradient min-h-screen w-full"></div>
         <div
           class="bg-[url(/public/image/bg-3.webp)] bg-cover hidden md:block min-h-screen w-full relative"
@@ -441,9 +445,15 @@
             <h1 class="md:hidden block text-center text-white font-lg pb-6">
               TESTIMONIAL
             </h1>
-            <div class="flex flex-col md:flex-row">
-              <img src="/public/image/foto2.webp" alt="Manager" />
-              <div class="text-white pl-5">
+            <div class="grid-template">
+              <div class="col-span-12 md:col-span-6">
+                <img
+                  src="/public/image/foto2.webp"
+                  alt="Manager"
+                  class="w-full"
+                />
+              </div>
+              <div class="text-white col-span-12 md:col-span-6">
                 <h1 class="hidden md:block font-lg pb-6">TESTIMONIAL</h1>
                 <div class="flex pb-6 items-center pt-4">
                   <div

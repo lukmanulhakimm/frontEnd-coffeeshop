@@ -152,6 +152,27 @@
         </div>
       </nav>
     </header>
+    <div
+      id="modal"
+      class="hidden flex h-screen w-screen bg-black/30 fixed z-[9999] top-0 items-center justify-center"
+    >
+      <div
+        class="max-w-[400px] flex flex-col gap-2 w-full rounded-md bg-white py-2"
+      >
+        <h2 class="text-xl font-bold py-1 px-2">Confirm checkout</h2>
+        <div class="w-full h-[1px] bg-dark-gray/40"></div>
+        <p class="py-1 px-2">Are you sure want to checkout?</p>
+        <div class="w-full h-[1px] bg-dark-gray/40"></div>
+        <div class="flex justify-end gap-2 px-2">
+          <button class="btn bg-primary font-semibold" id="modal-confirm-btn">
+            Confirm
+          </button>
+          <button class="btn border font-semibold" id="modal-cancel-btn">
+            Cancel
+          </button>
+        </div>
+      </div>
+    </div>
     <main class="mt-[118px]">
       <div class="wrapper">
         <div class="container">
@@ -258,6 +279,7 @@
                     <p class="font-bold">Idr.44.000</p>
                   </div>
                   <button
+                    id="modal-trigger"
                     class="w-full font-semibold btn py-2 rounded-md bg-primary mb-5"
                   >
                     Checkout

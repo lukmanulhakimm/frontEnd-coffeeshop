@@ -22,7 +22,7 @@
     }
 
     .section-title-text {
-      @apply font-jakarta text-[48px] leading-[60px] font-medium;
+      @apply font-jakarta text-[24px] md:text-[48px] leading-[60px] font-medium;
     }
 
     .font-sm {
@@ -42,17 +42,17 @@
 
     .font-xl {
       /* 18 */
-      @apply text-lg leading-[22.68px] font-semibold;
+      @apply text-lg leading-[22.68px] ;
     }
 
     .font-xxl {
       /* 22 */
-      @apply text-[22px] leading-[27.72px] font-semibold;
+      @apply text-[22px] leading-[27.72px] ;
     }
 
     
     .font-desc {
-      @apply font-sm md:font-md lg:font-lg;
+      @apply font-sm md:font-md;
     }
 
     .font-title {
@@ -60,7 +60,7 @@
     }
 
     .btn {
-      @apply flex justify-center px-[12px] py-[8px] rounded-[6px] clickable
+      @apply flex justify-center px-[12px] py-[8px] rounded-[6px] clickable items-center
     }
 
 

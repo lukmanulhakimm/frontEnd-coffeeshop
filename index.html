@@ -25,8 +25,8 @@
     <title>Home</title>
   </head>
   <body class="font-jakarta">
-    <header class="wrapper bg-blue-500 z-10 w-full fixed top-0 left-0">
-      <nav class="container bg-white">
+    <header class="wrapper z-10 w-full fixed top-0 left-0">
+      <nav class="container">
         <div class="flex items-center justify-between relative">
           <div class="flex gap-16">
             <div class="flex items-center gap-4">
@@ -151,68 +151,347 @@
       </nav>
     </header>
     <main>
-      <section class="wrapper w-full min-h-screen relative">
-        <div class="home-gradient min-h-screen w-full"></div>
+      <section class="md:wrapper w-full min-h-screen relative">
         <div
-          class="bg-[url(/public/image/bg-3.webp)] bg-cover hidden lg:block min-h-screen w-full relative"
+          class="md:hidden w-full h-[406px] bg-[url(/public/image/bg-3.webp)] bg-cover bg-center"
         >
-          <button
-            class="flex items-center btn rounded-full w-[80px] h-[80px] bg-primary absolute top-[450px] right-11"
-          >
-            <img src="/public/icons/chats.webp" alt="chats" />
-          </button>
+          <!-- <img src="" alt="" /> -->
         </div>
+        <div class="hidden md:block md:home-gradient min-h-screen w-full"></div>
+        <div
+          class="bg-[url(/public/image/bg-3.webp)] bg-cover hidden md:block min-h-screen w-full relative"
+        ></div>
 
-        <div class="absolute text-white min-h-screen h-full container">
-          <div class="max-w-[50%] h-full flex flex-col justify-center">
+        <div
+          class="md:absolute py-[60px] md:py-0 home-gradient md:bg-none text-white md:min-h-screen md:h-full container"
+        >
+          <div
+            class="w-full md:max-w-[50%] h-full flex flex-col justify-center"
+          >
             <div class="max-w-[518px] w-full">
-              <h1 class="text-5xl text-white">
+              <h1 class="text-[24px] md:text-3xl lg:text-5xl text-white">
                 Start Your Day with Coffee and Good Meals
               </h1>
-              <div class="max-w-[488px] font-lg pt-6">
-                <p>
+              <div class="max-w-[488px] pt-6">
+                <p class="font-desc">
                   We provide high quality beans, good taste, and healthy meals
                   made by love just for you. Start your day with us for a bigger
                   smile!
                 </p>
               </div>
               <button
-                class="btn bg-primary py-4 px-8 rounded-md text-[#0B132A] mt-6"
+                class="btn bg-primary py-2 md:py-4 font-medium px-8 rounded-md text-[#0B132A] mt-6"
               >
                 Get Started
               </button>
               <div class="flex w-full pt-6 gap-10">
                 <div class="border-r-2 w-full">
-                  <h1 class="text-5xl text-primary pb-3">90+</h1>
-                  <p class="font-lg">Staff</p>
+                  <h1
+                    class="text-[24px] md:text-3xl lg:text-5xl text-primary pb-3"
+                  >
+                    90+
+                  </h1>
+                  <p class="text-xs md:text-md">Staff</p>
                 </div>
                 <div class="border-r-2 w-full">
-                  <h1 class="text-5xl text-primary pb-3">30+</h1>
-                  <div class="font-lg">Stores</div>
+                  <h1
+                    class="text-[24px] md:text-3xl lg:text-5xl text-primary pb-3"
+                  >
+                    30+
+                  </h1>
+                  <div class="text-xs md:text-md">Stores</div>
                 </div>
                 <div class="w-full">
-                  <h1 class="text-5xl text-primary pb-3">800+</h1>
-                  <p class="font-lg">Customer</p>
+                  <h1
+                    class="text-[24px] md:text-3xl lg:text-5xl text-primary pb-3"
+                  >
+                    800+
+                  </h1>
+                  <p class="text-xs md:text-md">Customer</p>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </section>
+      <section class="wrapper relative">
+        <div class="md:container">
+          <div class="flex flex-col md:flex-row">
+            <div class="w-full md:hidden block">
+              <img src="/public/image/bg-5.webp" alt="barista" />
+            </div>
+            <div
+              class="w-full md:w-[50%] pt-[24px] md:pt-14 md:pr-16 px-[16px]"
+            >
+              <div class="flex items-center gap-6">
+                <div class="w-[7px] h-[68px] bg-primary"></div>
+                <h1 class="font-medium text-5xl">
+                  We Provide <span class="text-brown">Good Coffee</span> and
+                  <span class="text-brown">Healthy Meals</span>
+                </h1>
+              </div>
+              <div class="text-md text-[#4F5665] pt-6">
+                <p>
+                  You can explore the menu that we provide with fun and have
+                  their own taste and make your day better.
+                </p>
+              </div>
+              <div class="pt-6 pb-14">
+                <div class="flex gap-2 font-md text-[#4F5665]">
+                  <img src="/public/icons/cklis.webp" alt="checklis" />
+                  <p>High quality beans</p>
+                </div>
+                <div class="flex items-center gap-2 font-md text-[#4F5665]">
+                  <img src="/public/icons/cklis.webp" alt="checklis" />
+                  <p>Healthy meals, you can request the ingredients</p>
+                </div>
+                <div class="flex items-center gap-2 font-md text-[#4F5665]">
+                  <img src="/public/icons/cklis.webp" alt="checklis" />
+                  <p>
+                    Chat with our staff to get better experience for ordering
+                  </p>
+                </div>
+                <div class="flex items-center gap-2 font-md text-[#4F5665]">
+                  <img src="/public/icons/cklis.webp" alt="checklis" />
+                  <p>
+                    Free member card with a minimum purchase of IDR 200.000.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="absolute hidden md:block right-0 w-[50%] top-0 h-full bg-[url('/public/image/bg-5.webp')] bg-cover"
+          ></div>
+        </div>
+      </section>
+      <div
+        class="flex justify-center items-center text-2xl md:text-5xl font-medium md:pt-20 pt-2"
+      >
+        <h1>Here is People’s <span class="text-brown">Favorite</span></h1>
+      </div>
+      <div class="flex justify-center pt-4 md:pt-6">
+        <div class="w-[68px] h-[7px] bg-primary"></div>
+      </div>
+      <div
+        class="text-center pt-4 md:pt-6 font-lg text-[#4F5665] md:pb-[60px] pb-4"
+      >
+        <p>
+          Let’s choose and have a bit taste of poeple’s favorite. It might be
+          yours too!
+        </p>
+      </div>
       <div class="wrapper">
         <div class="container">
-          <div class="flex justify-between">
-            <div>
-              <h1 class="font-medium text-5xl">
-                We Provide Good Coffee and Healthy Meals
-              </h1>
+          <div class="grid-template">
+            <div class="col-span-6 md:col-span-3 w-full">
+              <img src="/public/image/image-1.webp" alt="ice-blend" />
+              <div class="w-full px-2 -mt-[30px] relative">
+                <div class="bg-white p-3 shadow-md">
+                  <h1 class="font-xl md:font-xxl font-medium pb-3">
+                    Hazelnut Latte
+                  </h1>
+                  <p class="font-desc pb-3 text-[#4F5665]">
+                    You can explore the menu that we provide with fun and have
+                    their own taste and make your day better.
+                  </p>
+                  <h1 class="text-primary font-xxl pb-3">IDR 20.000</h1>
+                  <div class="flex flex-col gap-2 md:flex-row">
+                    <button
+                      class="btn text-center bg-primary rounded-md py-2 font-semibold w-full font-md"
+                    >
+                      Buy
+                    </button>
+                    <button
+                      class="btn border-primary border py-1 md:py-2 items-center md:w-[58px]"
+                    >
+                      <img
+                        src="/public/icons/market.webp"
+                        alt="shopping"
+                        class="w-6 full"
+                      />
+                    </button>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div>
-              <img src="/public/image/bg-5.webp" alt="background-5" />
+            <div class="col-span-6 md:col-span-3 w-full">
+              <img src="/public/image/image-2.webp" alt="ice-blend" />
+              <div class="w-full px-2 -mt-[30px] relative">
+                <div class="bg-white p-3 shadow-md">
+                  <h1 class="font-xl md:font-xxl font-medium pb-3">
+                    Hazelnut Latte
+                  </h1>
+                  <p class="font-desc pb-3 text-[#4F5665]">
+                    You can explore the menu that we provide with fun and have
+                    their own taste and make your day better.
+                  </p>
+                  <h1 class="text-primary font-xxl pb-3">IDR 20.000</h1>
+                  <div class="flex flex-col gap-2 md:flex-row">
+                    <button
+                      class="btn text-center bg-primary rounded-md py-2 font-semibold w-full font-md"
+                    >
+                      Buy
+                    </button>
+                    <button
+                      class="btn border-primary border py-1 md:py-2 items-center md:w-[58px]"
+                    >
+                      <img
+                        src="/public/icons/market.webp"
+                        alt="shopping"
+                        class="md:w-full"
+                      />
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-span-6 md:col-span-3 w-full">
+              <img src="/public/image/image-3.webp" alt="ice-blend" />
+              <div class="w-full px-2 -mt-[30px] relative">
+                <div class="bg-white p-3 shadow-md">
+                  <h1 class="font-xl md:font-xxl font-medium pb-3">
+                    Hazelnut Latte
+                  </h1>
+                  <p class="font-desc pb-3 text-[#4F5665]">
+                    You can explore the menu that we provide with fun and have
+                    their own taste and make your day better.
+                  </p>
+                  <h1 class="text-primary font-xxl pb-3">IDR 20.000</h1>
+                  <div class="flex flex-col gap-2 md:flex-row">
+                    <button
+                      class="btn text-center bg-primary rounded-md py-2 font-semibold w-full font-md"
+                    >
+                      Buy
+                    </button>
+                    <button
+                      class="btn border-primary border py-1 md:py-2 items-center md:w-[58px]"
+                    >
+                      <img
+                        src="/public/icons/market.webp"
+                        alt="shopping"
+                        class="md:w-full"
+                      />
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-span-6 md:col-span-3 w-full">
+              <img src="/public/image/image-4.webp" alt="ice-blend" />
+              <div class="w-full px-2 -mt-[30px] relative">
+                <div class="bg-white p-3 shadow-md">
+                  <h1 class="font-xl md:font-xxl font-medium pb-3">
+                    Hazelnut Latte
+                  </h1>
+                  <p class="font-desc pb-3 text-[#4F5665]">
+                    You can explore the menu that we provide with fun and have
+                    their own taste and make your day better.
+                  </p>
+                  <h1 class="text-primary font-xxl pb-3">IDR 20.000</h1>
+                  <div class="flex flex-col gap-2 md:flex-row">
+                    <button
+                      class="btn text-center bg-primary rounded-md py-2 font-semibold w-full font-md"
+                    >
+                      Buy
+                    </button>
+                    <button
+                      class="btn border-primary border py-1 md:py-2 items-center md:w-[58px]"
+                    >
+                      <img
+                        src="/public/icons/market.webp"
+                        alt="shopping"
+                        class="md:w-full"
+                      />
+                    </button>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
+      <div class="wrapper">
+        <div class="container">
+          <div
+            class="text-center section-title-text font-medium w-full pt-20 md:pt-36 text-[#0B132A]"
+          >
+            <p>
+              <span class="text-brown">Visit Our People</span> in The Spot on
+              The Map Below
+            </p>
+          </div>
+          <div class="flex justify-center py-2 md:py-6">
+            <div class="w-[68px] h-[7px] bg-primary"></div>
+          </div>
+          <div>
+            <p class="font-lg text-center">
+              You can explore the menu that we provide with fun and have their
+              own taste and make your day better.
+            </p>
+          </div>
+          <div class="w-full md:mt-[60px] mt-4">
+            <img src="/public/image/map.webp" alt="Map" />
+          </div>
+        </div>
+      </div>
+      <div class="home-gradient">
+        <div class="wrapper">
+          <div class="container py-[76px]">
+            <h1 class="md:hidden block text-center text-white font-lg pb-6">
+              TESTIMONIAL
+            </h1>
+            <div class="flex flex-col md:flex-row">
+              <img src="/public/image/foto2.webp" alt="Manager" />
+              <div class="text-white pl-5">
+                <h1 class="hidden md:block font-lg pb-6">TESTIMONIAL</h1>
+                <div class="flex pb-6 items-center pt-4">
+                  <div
+                    class="md:w-[7px] md:h-[68px] w-[3px] h-[30px] bg-primary"
+                  ></div>
+                  <h1 class="text-2xl md:font-title pl-5">Viezh Robert</h1>
+                </div>
+                <h2 class="text-primary font-lg">Manager Coffe Shop</h2>
+                <p class="font-desc pt-[25px]">
+                  “Wow... I am very happy to spend my whole day here. the Wi-fi
+                  is good, and the coffee and meals tho. I like it here!! Very
+                  recommended!
+                </p>
+                <div class="flex gap-6 pt-[25px] items-center">
+                  <img src="/public/icons/bintang.webp" alt="bintang" />
+                  <img src="/public/icons/bintang.webp" alt="bintang" />
+                  <img src="/public/icons/bintang.webp" alt="bintang" />
+                  <img src="/public/icons/bintang.webp" alt="bintang" />
+                  <img src="/public/icons/bintang.webp" alt="bintang" />
+                  <div class="font-lg"><p>5.0</p></div>
+                </div>
+                <div class="flex gap-2 pt-[25px]">
+                  <button class="rounded-full bg-white p-4">
+                    <img src="/public/icons/arrow-left.webp" alt="arrow-left" />
+                  </button>
+                  <button class="rounded-full bg-primary p-4">
+                    <img
+                      src="/public/icons/arrow-right.webp"
+                      alt="arrow-right"
+                    />
+                  </button>
+                </div>
+                <div class="flex gap-2 pt-[25px]">
+                  <div class="bg-primary rounded-lg w-[25px] h-[8.44px]"></div>
+                  <div class="rounded-full bg-white w-2 h-2"></div>
+                  <div class="rounded-full bg-white w-2 h-2"></div>
+                  <div class="rounded-full bg-white w-2 h-2"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button
+        class="flex items-center btn rounded-full w-[80px] h-[80px] clickable cursor-pointer bg-primary fixed bottom-[90px] right-11 z-20"
+      >
+        <img src="/public/icons/chats.webp" alt="chats" />
+      </button>
     </main>
     <footer class="wrapper mt-24 bg-light-gray py-[50px]">
       <div class="container">

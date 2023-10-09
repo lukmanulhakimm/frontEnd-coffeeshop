@@ -153,105 +153,385 @@
       </nav>
     </header>
     <main class="mt-[118px]">
-      <div class="container">
-        <div class="w-full">
-          <div class="flex w-full gap-5 items-center mb-9">
-            <h1 class="font-xxl text-5xl">History Order</h1>
-            <div class="text-center bg-light-gray w-[2.813rem] h-[2.5rem] p-3">
-              <p class="font-md font-medium">2</p>
+      <div class="wrapper">
+        <div class="container">
+          <div
+            class="flex items-center md:gap-7 justify-between md:justify-start md:mb-9 mb-2"
+          >
+            <h1 class="font-title">History Order</h1>
+            <div
+              class="text-center text-xs md:text-base flex items-center justify-center px-[10px] bg-light-gray md:w-[45px] md:h-[45px] w-[24px] h-[24px]"
+            >
+              2
             </div>
           </div>
-          <div class="grid-template w-full">
-            <section class="col-span-7">
-              <div class="flex justify-center gap-10 p-[10px]">
+          <div class="grid grid-cols-12 gap-3">
+            <div class="md:col-span-7 col-span-12">
+              <div class="grid grid-cols-4 gap-5 items-center">
                 <div
-                  class="flex w-full max-w-[429px] bg-light-gray px-3 items-center"
+                  class="md:col-span-3 col-span-4 grid grid-cols-3 bg-[#E8E8E899]/[60%] p-[10px] text-center gap-3 order-2 md:order-1"
                 >
+                  <div class="bg-white py-[10px]">
+                    <h1>On Progress</h1>
+                  </div>
+                  <div class="py-[10px]">
+                    <h1>Sending Goods</h1>
+                  </div>
+                  <div class="py-[10px]">
+                    <h1>Finish Order</h1>
+                  </div>
+                </div>
+                <div class="md:col-span-1 col-span-4 order-1 md:order-2">
                   <div
-                    class="font-md py-[10px] px-[20px] bg-white w-full text-center"
+                    class="flex items-center gap-2 md:gap-0 justify-between text-center bg-[#E8E8E899]/[60%] w-fit py-[22px] px-[10px]"
                   >
-                    <p>On Progress</p>
-                  </div>
-                  <div class="font-md py-3 px-3 w-full text-center">
-                    <p>Sending Goods</p>
-                  </div>
-                  <div class="font-md py-3 px-3 w-full text-center">
-                    <p>Finish Order</p>
-                  </div>
-                </div>
-                <div
-                  class="flex w-full max-w-[209px] bg-light-gray items-center gap-3 justify-center"
-                >
-                  <div>
-                    <img src="/public/icons/Calendar.webp" alt="calender" />
-                  </div>
-                  <h2 class="font-md">January 2023</h2>
-                  <div>
-                    <img src="/public/icons/down.webp" alt="drop-down" />
-                  </div>
-                </div>
-              </div>
-              <div>
-                <div class="wrapper mt-[38px]">
-                  <div>
-                    <div class="flex justify-around gap-4 bg-[#E8E8E84D]/[30%]">
-                      <img src="/public/image/coffee1.webp" alt="coffee" />
-                      <div class="flex flex-col gap-3 w-full">
-                        <div class="flex gap-1 pt-6">
-                          <img
-                            src="/public/icons/tsampah.webp"
-                            alt="Recycle-Bin"
-                          />
-                          <p>No. Order</p>
-                        </div>
-                        <h2 class="font-lg font-bold whitespace-nowrap">
-                          #12354-09893
-                        </h2>
-                        <a class="text-primary font-md">Views Order Detail</a>
-                      </div>
-                      <div class="flex flex-col gap-3 pt-6 w-full">
-                        <div class="flex gap-1">
-                          <img
-                            src="/public/icons/tsampah.webp"
-                            alt="Recycle-Bin"
-                          />
-                          <p>No. Order</p>
-                        </div>
-                        <h2 class="font-lg font-bold whitespace-nowrap">
-                          23 January 2023
-                        </h2>
-                      </div>
-                      <div class="flex flex-col gap-3 pt-6 w-full">
-                        <div class="flex gap-1">
-                          <img
-                            src="/public/icons/Repeat.webp"
-                            alt="Recycle-Bin"
-                          />
-                          <p>Total</p>
-                        </div>
-                        <h2 class="font-lg font-bold whitespace-nowrap">
-                          Idr 40.000
-                        </h2>
-                      </div>
-                      <div class="flex flex-col gap-3 pt-6 w-full">
-                        <div class="flex gap-1 w-full">
-                          <img
-                            src="/public/icons/process.webp"
-                            alt="Recycle-Bin"
-                          />
-                          <p>Status</p>
-                        </div>
-                        <button
-                          class="clickable text-primary text-xs font-bold leading-6 bg-[#FF890633] rounded-3xl p-3"
-                        >
-                          On Progress
-                        </button>
-                      </div>
+                    <div>
+                      <img
+                        src="/public/icons/Calendar.webp"
+                        alt="Calendar"
+                        class="w-[12px]"
+                      />
+                    </div>
+                    <p class="text-sm">January 2023</p>
+                    <div>
+                      <img
+                        src="/public/icons/down.webp"
+                        alt="down"
+                        class="w-[12px]"
+                      />
                     </div>
                   </div>
                 </div>
               </div>
-            </section>
+              <div
+                class="grid grid-cols-5 gap-2 bg-[#E8E8E899]/[60%] mt-[38px] py-[12px] px-[10px] items-center"
+              >
+                <div class="col-span-1 hidden md:block">
+                  <img src="/public/image/coffee1.webp" alt="coffee" />
+                </div>
+                <div class="md:col-span-4 col-span-5">
+                  <div class="grid grid-cols-4 md:gap-1 gap-6">
+                    <div class="md:col-span-1 col-span-2">
+                      <div class="flex gap-1">
+                        <img
+                          src="/public/icons/tsampah.webp"
+                          alt="tsampah"
+                          class="w-[20px] h-[20px]"
+                        />
+                        <p class="text-sm">No. Order</p>
+                      </div>
+                      <h2 class="text-sm mt-3 font-bold">#12354-09893</h2>
+                    </div>
+                    <div class="md:col-span-1 col-span-2">
+                      <div class="flex gap-1">
+                        <img
+                          src="/public/icons/Calendar.webp"
+                          alt="Calendar"
+                          class="w-[20px] h-[20px]"
+                        />
+                        <p>Date</p>
+                      </div>
+                      <h2 class="text-sm mt-2 font-bold">23 January 2023</h2>
+                    </div>
+                    <div class="md:col-span-1 col-span-2">
+                      <div class="flex gap-1">
+                        <img
+                          src="/public/icons/Repeat.webp"
+                          alt="Repeat"
+                          class="w-[20px] h-[20px]"
+                        />
+                        <p>Total</p>
+                      </div>
+                      <h2 class="text-sm mt-2 font-bold">Idr 40.000</h2>
+                    </div>
+                    <div class="md:col-span-1 col-span-2">
+                      <div class="flex gap-1">
+                        <img src="/public/icons/process.webp" alt="process" />
+                        <p>Status</p>
+                      </div>
+                      <button
+                        class="btn rounded-3xl p-[5px] mt-2 bg-[#FF890633]/[20%] text-primary text-xs font-bold"
+                      >
+                        On Progress
+                      </button>
+                    </div>
+                    <div class="col-span-4">
+                      <p
+                        class="text-xs whitespace-nowrap mt-4 text-primary underline"
+                      >
+                        Views Order Detail
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="grid grid-cols-5 gap-2 bg-[#E8E8E899]/[60%] mt-[12px] py-[12px] px-[10px] items-center"
+              >
+                <div class="col-span-1 hidden md:block">
+                  <img src="/public/image/coffee1.webp" alt="coffee" />
+                </div>
+                <div class="md:col-span-4 col-span-5">
+                  <div class="grid grid-cols-4 md:gap-1 gap-6">
+                    <div class="md:col-span-1 col-span-2">
+                      <div class="flex gap-1">
+                        <img
+                          src="/public/icons/tsampah.webp"
+                          alt="tsampah"
+                          class="w-[20px] h-[20px]"
+                        />
+                        <p class="text-sm">No. Order</p>
+                      </div>
+                      <h2 class="text-sm mt-3 font-bold">#12354-09893</h2>
+                    </div>
+                    <div class="md:col-span-1 col-span-2">
+                      <div class="flex gap-1">
+                        <img
+                          src="/public/icons/Calendar.webp"
+                          alt="Calendar"
+                          class="w-[20px] h-[20px]"
+                        />
+                        <p>Date</p>
+                      </div>
+                      <h2 class="text-sm mt-2 font-bold">23 January 2023</h2>
+                    </div>
+                    <div class="md:col-span-1 col-span-2">
+                      <div class="flex gap-1">
+                        <img
+                          src="/public/icons/Repeat.webp"
+                          alt="Repeat"
+                          class="w-[20px] h-[20px]"
+                        />
+                        <p>Total</p>
+                      </div>
+                      <h2 class="text-sm mt-2 font-bold">Idr 40.000</h2>
+                    </div>
+                    <div class="md:col-span-1 col-span-2">
+                      <div class="flex gap-1">
+                        <img src="/public/icons/process.webp" alt="process" />
+                        <p>Status</p>
+                      </div>
+                      <button
+                        class="btn rounded-3xl p-[5px] mt-2 bg-[#FF890633]/[20%] text-primary text-xs font-bold"
+                      >
+                        On Progress
+                      </button>
+                    </div>
+                    <div class="col-span-4">
+                      <p
+                        class="text-xs whitespace-nowrap mt-4 text-primary underline"
+                      >
+                        Views Order Detail
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="grid grid-cols-5 gap-2 bg-[#E8E8E899]/[60%] mt-[12px] py-[12px] px-[10px] items-center"
+              >
+                <div class="col-span-1 hidden md:block">
+                  <img src="/public/image/coffee1.webp" alt="coffee" />
+                </div>
+                <div class="md:col-span-4 col-span-5">
+                  <div class="grid grid-cols-4 md:gap-1 gap-6">
+                    <div class="md:col-span-1 col-span-2">
+                      <div class="flex gap-1">
+                        <img
+                          src="/public/icons/tsampah.webp"
+                          alt="tsampah"
+                          class="w-[20px] h-[20px]"
+                        />
+                        <p class="text-sm">No. Order</p>
+                      </div>
+                      <h2 class="text-sm mt-3 font-bold">#12354-09893</h2>
+                    </div>
+                    <div class="md:col-span-1 col-span-2">
+                      <div class="flex gap-1">
+                        <img
+                          src="/public/icons/Calendar.webp"
+                          alt="Calendar"
+                          class="w-[20px] h-[20px]"
+                        />
+                        <p>Date</p>
+                      </div>
+                      <h2 class="text-sm mt-2 font-bold">23 January 2023</h2>
+                    </div>
+                    <div class="md:col-span-1 col-span-2">
+                      <div class="flex gap-1">
+                        <img
+                          src="/public/icons/Repeat.webp"
+                          alt="Repeat"
+                          class="w-[20px] h-[20px]"
+                        />
+                        <p>Total</p>
+                      </div>
+                      <h2 class="text-sm mt-2 font-bold">Idr 40.000</h2>
+                    </div>
+                    <div class="md:col-span-1 col-span-2">
+                      <div class="flex gap-1">
+                        <img src="/public/icons/process.webp" alt="process" />
+                        <p>Status</p>
+                      </div>
+                      <button
+                        class="btn rounded-3xl p-[5px] mt-2 bg-[#FF890633]/[20%] text-primary text-xs font-bold"
+                      >
+                        On Progress
+                      </button>
+                    </div>
+                    <div class="col-span-4">
+                      <p
+                        class="text-xs whitespace-nowrap mt-4 text-primary underline"
+                      >
+                        Views Order Detail
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="grid grid-cols-5 gap-2 bg-[#E8E8E899]/[60%] mt-[12px] py-[12px] px-[10px] items-center"
+              >
+                <div class="col-span-1 hidden md:block">
+                  <img src="/public/image/coffee1.webp" alt="coffee" />
+                </div>
+                <div class="md:col-span-4 col-span-5">
+                  <div class="grid grid-cols-4 md:gap-1 gap-6">
+                    <div class="md:col-span-1 col-span-2">
+                      <div class="flex gap-1">
+                        <img
+                          src="/public/icons/tsampah.webp"
+                          alt="tsampah"
+                          class="w-[20px] h-[20px]"
+                        />
+                        <p class="text-sm">No. Order</p>
+                      </div>
+                      <h2 class="text-sm mt-3 font-bold">#12354-09893</h2>
+                    </div>
+                    <div class="md:col-span-1 col-span-2">
+                      <div class="flex gap-1">
+                        <img
+                          src="/public/icons/Calendar.webp"
+                          alt="Calendar"
+                          class="w-[20px] h-[20px]"
+                        />
+                        <p>Date</p>
+                      </div>
+                      <h2 class="text-sm mt-2 font-bold">23 January 2023</h2>
+                    </div>
+                    <div class="md:col-span-1 col-span-2">
+                      <div class="flex gap-1">
+                        <img
+                          src="/public/icons/Repeat.webp"
+                          alt="Repeat"
+                          class="w-[20px] h-[20px]"
+                        />
+                        <p>Total</p>
+                      </div>
+                      <h2 class="text-sm mt-2 font-bold">Idr 40.000</h2>
+                    </div>
+                    <div class="md:col-span-1 col-span-2">
+                      <div class="flex gap-1">
+                        <img src="/public/icons/process.webp" alt="process" />
+                        <p>Status</p>
+                      </div>
+                      <button
+                        class="btn rounded-3xl p-[5px] mt-2 bg-[#FF890633]/[20%] text-primary text-xs font-bold"
+                      >
+                        On Progress
+                      </button>
+                    </div>
+                    <div class="col-span-4">
+                      <p
+                        class="text-xs whitespace-nowrap mt-4 text-primary underline"
+                      >
+                        Views Order Detail
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="md:flex gap-5 justify-center items-center mt-8 w-full hidden"
+              >
+                <button
+                  class="btn rounded-full bg-primary px-4 text-base font-medium"
+                >
+                  1
+                </button>
+                <button
+                  class="btn rounded-full bg-light-gray px-4 text-base font-medium"
+                >
+                  2
+                </button>
+                <button
+                  class="btn rounded-full bg-light-gray px-4 text-base font-medium"
+                >
+                  3
+                </button>
+                <button
+                  class="btn rounded-full bg-light-gray px-4 text-base font-medium"
+                >
+                  4
+                </button>
+                <button class="btn rounded-full w-10 h-10 bg-primary p-0">
+                  <img
+                    src="/public/icons/arrow-right2.webp"
+                    alt="arrow-right"
+                  />
+                </button>
+              </div>
+            </div>
+
+            <div class="md:col-span-5 col-span-12">
+              <div
+                class="grid grid-cols-1 p-[10px] border border-[#E8E8E8] text-center"
+              >
+                <div class="col-span-1 p-[15px]">
+                  <img src="/public/icons/message.webp" alt="message" />
+                  <h2 class="text-[#4F5665] text-lg font-bold mt-3 text-left">
+                    Send Us Message
+                  </h2>
+                  <p class="font-desc text-[#4F5665] mt-3 text-left">
+                    if your unable to find answer or find your product quickly,
+                    please describe your problem and tell us. we will give you
+                    solution.
+                  </p>
+                  <button
+                    class="btn text-sm font-medium bg-primary w-full mt-3"
+                  >
+                    Send Message
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="flex gap-5 justify-center items-center mt-8 w-full md:hidden"
+          >
+            <button
+              class="btn rounded-full bg-primary px-4 text-base font-medium"
+            >
+              1
+            </button>
+            <button
+              class="btn rounded-full bg-light-gray px-4 text-base font-medium"
+            >
+              2
+            </button>
+            <button
+              class="btn rounded-full bg-light-gray px-4 text-base font-medium"
+            >
+              3
+            </button>
+            <button
+              class="btn rounded-full bg-light-gray px-4 text-base font-medium"
+            >
+              4
+            </button>
+            <button class="btn rounded-full w-10 h-10 bg-primary p-0">
+              <img src="/public/icons/arrow-right2.webp" alt="arrow-right" />
+            </button>
           </div>
         </div>
       </div>

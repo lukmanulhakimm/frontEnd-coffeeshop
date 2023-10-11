@@ -4,9 +4,9 @@ Ini adalah proyek frontend untuk Coffee Shop. Proyek ini bertujuan untuk mencipt
 
 Fitur Proyek ini mencakup beberapa fitur utama:
 
-Halaman Beranda: Halaman utama yang menampilkan katalog produk, penawaran khusus, dan informasi toko.
+Halaman HOME: Halaman utama yang menampilkan katalog produk, penawaran khusus, dan informasi toko.
 
-Halaman Menu: Menampilkan menu kopi, teh, dan camilan beserta deskripsi dan harga.
+Halaman PRODUCT: Menampilkan menu kopi, teh, dan camilan beserta deskripsi dan harga.
 
 Keranjang Belanja: Pengguna dapat menambahkan produk ke keranjang belanja, melihat daftar belanja, dan melakukan checkout.
 
@@ -23,6 +23,7 @@ install tailwindcss with npm
 
   npm install -D tailwindcss
 npx tailwindcss init
+
 Deployment
 To deploy this project run
 
